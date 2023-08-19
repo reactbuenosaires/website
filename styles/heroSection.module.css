@@ -1,0 +1,54 @@
+.title {
+    text-align: center;
+    color:white;
+    font-size: 2em;
+}
+
+.outerHeading{
+   height: 100vh; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.innerHeading{
+    border: 0px solid #ddd;
+    height: 40px;
+    display: flex;
+    justify-content: center
+}
+
+/* Animation code */
+.span1 {
+    position: absolute;
+    color: black;
+    opacity: 0;
+    animation: animation1 3s infinite; 
+}
+
+.span2 {
+    position: absolute;
+    color: black;
+    opacity: 0;
+    animation: animation2 3s infinite; 
+}
+
+@keyframes animation1 {
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+@keyframes animation2 {
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
