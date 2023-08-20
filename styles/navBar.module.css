@@ -1,0 +1,7 @@
+.nav{
+    margin: 0.9em;
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    position: fixed;
+}

@@ -1,0 +1,11 @@
+.rrss{
+    margin: 5px;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.icons{
+    margin: 0.5em;
+}

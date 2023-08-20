@@ -1,7 +1,16 @@
+.hero_bg{
+    background-image: url('../public/axel-eres-5K0U0Gc5Nmk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
 .title {
     text-align: center;
-    color:white;
-    font-size: 2em;
+    font-size: 200%;
+    font-weight: 900;
+    color: #ffffff;
 }
 
 .outerHeading{
@@ -10,6 +19,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 
 .innerHeading{
@@ -24,27 +34,33 @@
     position: absolute;
     color: black;
     opacity: 0;
-    animation: animation1 3s infinite; 
+    animation: animation1 5s infinite; 
 }
 
 .span2 {
     position: absolute;
     color: black;
     opacity: 0;
-    animation: animation2 3s infinite; 
+    animation: animation2 5s infinite; 
 }
 
 @keyframes animation1 {
-    25%{
+    10%{
         opacity: 0;
     }
-    50%{
+    25%{
         opacity: 1;
+    }
+    50%{
+        opacity: 0;
     }
 }
 
 @keyframes animation2 {
-    75%{
+    70%{
+        opacity: 0;
+    }
+    90%{
         opacity: 1;
     }
     100%{
