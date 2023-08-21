@@ -1,0 +1,29 @@
+.action_Card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 1px;
+    display: flex;
+    position: absolute;
+    top: 60%;
+    background: rgb(2,0,36);
+    background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(14,23,56,1) 28%, rgba(9,86,122,1) 67%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(2,0,36);
+    background: linear-gradient(214deg, rgba(2,0,36,1) 0%, rgba(14,23,56,1) 28%, rgba(9,86,122,1) 67%, rgba(0,212,255,1) 100%);
+    scale: 1.1;
+}
