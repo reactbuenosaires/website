@@ -7,6 +7,7 @@
 }
 
 .text{
+    position: relative;
     color: white;
     font-weight: 300;
     text-align: center;
@@ -23,14 +24,35 @@
 
 .container{
     display: flex;
-    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.img:hover{
+.card{
+    position: relative;
+}
+
+.img{
     opacity: 0.5;
 }
 
-.img {
-    padding: 0.9em;
+.card:hover , 
+.container_text:hover,
+.img:hover{
+    opacity: 1;
+    scale: 1.1;
+    cursor: pointer;
 }
+
+.container_text{
+    display: flex;
+    top: 20%;
+    padding-left: 10px;
+    position: absolute;
+    color: white;
+    align-items: center;
+}
+
+
+

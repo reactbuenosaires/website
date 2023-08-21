@@ -6,13 +6,14 @@ import Image from 'next/image'
 import style from '../../../styles/about.module.css'
 
 
-const images = [{description:'Speaker', src:speaker}, {description: 'Conference stage', src:stage}, {description: 'People in Meetup', src:people}, {description:'Code Screen', src:code}]
+const images = [{description:'Speaker', src:speaker, text:'+30 Speakers'}, {description: 'Conference stage', src:stage, text:'+80 Eventos'}, {description: 'People in Meetup', src:people, text:'+7000 Miembros'}, {description:'Code Screen', src:code, text:'+30h Contenido'}]
 export default function AboutImages(){
      return(
-        <div className={style.container}>
+        <div  className={style.container}>
             {images.map((img, index)=>{
-                return <div key={index}>
+                return <div className={style.card}  key={index}>
                     <Image className={style.img} src={img.src} alt={img.description} width={150} height={100}/>
+                    <p className={style.container_text}>{img.text}</p>
                     </div>
             })}
         </div>
