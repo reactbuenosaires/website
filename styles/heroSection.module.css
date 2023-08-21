@@ -1,28 +1,38 @@
-.hero_bg{
+/* Main style component */
+.hero_Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style background  */
+.hero_bg {
+    /* Image from unsplash */
     background-image: url('../public/axel-eres-5K0U0Gc5Nmk-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-
+    width: 100vw;
+    height: 100vh;
+    filter: blur(1px);
+    opacity: 0.2;
 }
 
-.title {
+/* Style container title */
+.h1_Title {
     text-align: center;
-    font-size: 200%;
+    font-size: 170%;
     font-weight: 900;
+    padding: 10px;
+}
+
+.outer_Heading {
+    align-items: center;
+    position: absolute;
+    top: 30%;
     color: #ffffff;
 }
 
-.outerHeading{
-   height: 100vh; 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-}
-
-.innerHeading{
+.inner_Heading {
     border: 0px solid #ddd;
     height: 40px;
     display: flex;
@@ -34,37 +44,41 @@
     position: absolute;
     color: black;
     opacity: 0;
-    animation: animation1 5s infinite; 
+    animation: animation1 5s infinite;
 }
 
 .span2 {
     position: absolute;
     color: black;
     opacity: 0;
-    animation: animation2 5s infinite; 
+    animation: animation2 5s infinite;
 }
 
 @keyframes animation1 {
-    10%{
+    10% {
         opacity: 0;
     }
-    25%{
+
+    25% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
 }
 
 @keyframes animation2 {
-    70%{
+    70% {
         opacity: 0;
     }
-    90%{
+
+    90% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
-    
+
 }

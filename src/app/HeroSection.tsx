@@ -2,21 +2,23 @@ import style from '../../styles/heroSection.module.css'
 
 export default function HeroSection() {
   return (
-    <div className={style.hero_bg}>
-    <div className={style.outerHeading}>
-        <h1 className={style.title}>
-          Comunidad de React BA 
-          <div className={style.innerHeading}>
-          <span className={style.span1}>
-            por
-          </span>
-          <span className={style.span2}>
-            para
-          </span>
+    <div className={style.hero_Main}>
+      <div className={style.hero_bg}>
+      </div>
+      <div className={style.outer_Heading}>
+        <h1 className={style.h1_Title}>
+          COMUNIDAD REACT BA
+          <div className={style.inner_Heading}>
+            <span className={style.span1}>
+              POR
+            </span>
+            <span className={style.span2}>
+              PARA
+            </span>
           </div>
-          Desarrolladores
-          </h1>
-    </div>
+          DESARROLLADORES
+        </h1>
+      </div>
     </div>
   )
 }

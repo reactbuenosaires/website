@@ -1,6 +1,6 @@
 import style from '../../../styles/callToAction.module.css'
 export default function Btn(props) {
-    return(
+    return (
         <div className={style.btn}>
             {props.action}
         </div>

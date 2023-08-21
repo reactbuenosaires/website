@@ -2,13 +2,13 @@ import Title from "./components/Title"
 import style from '../../styles/main.module.css'
 import CardAction from "./components/CardAction"
 export default function CallToAction(props) {
-    return(
+    return (
         <div>
-            <Title title='Impulsda la Comunidad'/>
+            <Title title='Impulsa la Comunidad' />
             <p className={style.text}>
                 ¡REACT BA somos todos y todos podemos participar!
             </p>
-            <CardAction/>
+            <CardAction />
         </div>
     )
 }
