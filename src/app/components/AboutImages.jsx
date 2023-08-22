@@ -12,7 +12,7 @@ export default function AboutImages() {
         <div className={style.container}>
             {images.map((img, index) => {
                 return <div className={style.card} key={index}>
-                    <Image className={style.img} src={img.src} alt={img.description} width={150} height={100} />
+                    <Image className={style.img} src={img.src} alt='text' width={150} height={100} />
                     <p className={style.container_text}>{img.text}</p>
                 </div>
             })}

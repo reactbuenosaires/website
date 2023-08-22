@@ -16,7 +16,7 @@ export default function RRSS() {
             {
                 icons.map((icon, index) => {
                     return <div key={index}>
-                        <Image className={style.icons} src={icon.src} alt={icon.name} width={10} height={10} />
+                        <Image className={style.icons} src={icon.src} alt='text' width={10} height={10} />
                     </div>
                 })
             }
