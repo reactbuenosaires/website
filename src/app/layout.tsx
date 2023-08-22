@@ -1,7 +1,6 @@
 import style from '../../styles/main.module.css'
 import NavBar from '@/app/components/NavBar';
 import RRSS from './components/RRSS';
-import tabIcon from '../../public/Wj0HIc5L_400x400.ico'
 
 export const metadata = {
   title: 'Create Next App',

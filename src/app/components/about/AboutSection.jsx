@@ -1,8 +1,8 @@
-import style from '../../styles/about.module.css'
-import AboutImages from './components/AboutImages'
-import Title from './components/Title'
+import style from '../../../../styles/about.module.css'
+import AboutImages from '../AboutImages'
+import Title from '@/app/components/Title'
 
-export default function AboutSection(props: String) {
+export default function AboutSection(props) {
     return (
         <div className={style.about}>
             <Title title='¿Quiénes Somos?' />

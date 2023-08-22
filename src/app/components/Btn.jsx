@@ -1,4 +1,4 @@
-import style from '../../../styles/callToAction.module.css'
+import style from '../../../styles/proposal.module.css'
 export default function Btn(props) {
     return (
         <div className={style.btn}>

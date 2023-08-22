@@ -1,8 +1,8 @@
-import TeamCard from "./components/TeamCard";
-import picMember from '../../public/aboutImages/people.jpg'
-import network1 from '../../public/icons/x-twitter.svg'
-import style from '../../styles/reactTeam.module.css'
-import Title from "./components/Title";
+import TeamCard from "../TeamCard";
+import picMember from '../../../../public/people.jpg'
+import network1 from '../../../../public/x-twitter.svg'
+import style from '../../../../styles/reactTeam.module.css'   
+import Title from '@/app/components/Title'
 
 const memberTeam = [
     {
@@ -39,7 +39,7 @@ export default function ReactTeam(props) {
             <div className={style.teamCard}>
                 {memberTeam.map((member, index) => {
                     return <div key={index}>
-                        <TeamCard urlPic={member.urlImage} name={member.name} role={member.role} networkUrl={member.network} />
+                        <TeamCard urlPic={member.urlImage} name={member.name} role={member.role} networkUrl={member.network} alt={member.role} />
                     </div>
                 })}
             </div>

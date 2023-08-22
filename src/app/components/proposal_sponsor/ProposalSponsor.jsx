@@ -1,6 +1,7 @@
-import Title from "./components/Title"
-import style from '../../styles/main.module.css'
-import CardAction from "./components/CardAction"
+import Title from "@/app/components/Title"
+import style from '../../../../styles/main.module.css'
+import CardProsopal from "../CardProposal"
+
 export default function CallToAction(props) {
     return (
         <div>
@@ -8,7 +9,7 @@ export default function CallToAction(props) {
             <p className={style.text}>
                 ¡REACT BA somos todos y todos podemos participar!
             </p>
-            <CardAction />
+            <CardProsopal />
         </div>
     )
 }
