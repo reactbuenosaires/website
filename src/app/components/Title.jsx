@@ -1,4 +1,4 @@
-import style from '../../../styles/main.module.css';
+import style from '@/app/global.module.css'
 
 export default function Title(props) {
     return (

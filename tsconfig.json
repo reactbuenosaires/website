@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/TeamCard.jsx", "src/app/components/team/RactTeam.jsx", "src/app/components/proposal_sponsor/ProposalSponsor.jsx", "src/app/components/Btn.jsx", "src/app/layout.jsx", "src/app/components/Btn.jsx", "src/app/components/proposal_sponsor/CardAction.jsx", "src/app/components/hero/HeroSection.jsx", "src/app/page.jsx", "src/app/components/about/AboutSection.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/TeamCard.jsx", "src/app/components/team/RactTeam.jsx", "src/app/components/proposal_sponsor/ProposalSponsor.jsx", "src/app/components/Boton.jsx", "src/app/layout.jsx", "src/app/components/Boton.jsx", "src/app/components/proposal_sponsor/CardAction.jsx", "src/app/components/hero/HeroSection.jsx", "src/app/page.jsx", "src/app/components/about/AboutSection.jsx"],
   "exclude": ["node_modules"]
 }

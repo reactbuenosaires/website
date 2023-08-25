@@ -1,4 +1,4 @@
-import style from '../../../../styles/about.module.css'
+import style from '@/app/components/about/about.module.css'
 import AboutImages from '../AboutImages'
 import Title from '@/app/components/Title'
 

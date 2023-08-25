@@ -8,7 +8,7 @@
 /* Style background  */
 .hero_bg {
     /* Image from unsplash */
-    background-image: url('../public/axel-eres-5K0U0Gc5Nmk-unsplash.jpg');
+    background-image: url('../../../../public/axel-eres-5K0U0Gc5Nmk-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

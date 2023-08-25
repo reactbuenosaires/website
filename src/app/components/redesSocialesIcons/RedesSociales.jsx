@@ -1,8 +1,8 @@
-import style from '../../../styles/rrss.module.css'
-import instagram from '../../../public/icons/instagram.svg'
-import youtube from '../../../public/icons/youtube.svg'
-import twitter from '../../../public/icons/x-twitter.svg'
-import meetUp from '../../../public/icons/meetup.svg'
+import style from '@/app/components/redesSocialesIcons/rrss.module.css'
+import instagram from '../../../../public/icons/instagram.svg'
+import youtube from '../../../../public/icons/youtube.svg'
+import twitter from '../../../../public/icons/x-twitter.svg'
+import meetUp from '../../../../public/icons/meetup.svg'
 import Image from 'next/image'
 
 const icons = [{ name: 'instagram', src: instagram },

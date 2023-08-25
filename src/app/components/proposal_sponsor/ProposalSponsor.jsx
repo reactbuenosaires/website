@@ -1,6 +1,6 @@
 import Title from "@/app/components/Title"
-import style from '../../../../styles/main.module.css'
-import CardProsopal from "../CardProposal"
+import style from '@/app/components/proposal_sponsor/proposal.module.css'
+import CardProsopal from "@/app/components/CardProposal"
 
 export default function CallToAction(props) {
     return (

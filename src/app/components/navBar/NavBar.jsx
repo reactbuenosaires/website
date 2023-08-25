@@ -1,5 +1,5 @@
-import menuIcon from '../../../public/bars-solid.svg'
-import style from '../../../styles/navBar.module.css'
+import menuIcon from '../../../../public/bars-solid.svg'
+import style from '../navBar/navBar.module.css'
 import Image from 'next/image'
 
 

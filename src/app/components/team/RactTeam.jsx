@@ -1,7 +1,7 @@
 import TeamCard from "../TeamCard";
 import picMember from '../../../../public/people.jpg'
 import network1 from '../../../../public/x-twitter.svg'
-import style from '../../../../styles/reactTeam.module.css'   
+import style from '@/app/components/team/reactTeam.module.css'   
 import Title from '@/app/components/Title'
 
 const memberTeam = [

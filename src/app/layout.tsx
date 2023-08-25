@@ -1,6 +1,6 @@
-import style from '../../styles/main.module.css'
-import NavBar from '@/app/components/NavBar';
-import RRSS from './components/RRSS';
+import style from '@/app/global.module.css'
+import NavBar from '@/app/components/navBar/NavBar';
+import RedesSociales from './components/redesSocialesIcons/RedesSociales';
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className={style.body}>
         <NavBar></NavBar>
         {children}
-        <RRSS />
+        <RedesSociales />
       </body>
     </html>
   )
