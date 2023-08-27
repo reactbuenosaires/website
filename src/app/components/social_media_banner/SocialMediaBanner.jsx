@@ -6,10 +6,24 @@ import meetUp from "@/app/assets/icons/meetup.svg";
 import Image from "next/image";
 
 const icons = [
-  { name: "instagram", src: instagram },
-  { name: "youtube", src: youtube },
-  { name: "twitter", src: twitter },
-  { name: "meetUp", src: meetUp },
+  {
+    name: "meetup",
+    src: meetUp,
+    link: "https://www.meetup.com/es/react-en-buenos-aires",
+  },
+  {
+    name: "youtube",
+    src: youtube,
+    link: "https://www.youtube.com/@ReactJSBuenosAires",
+  },
+  { name: "twitter", 
+    src: twitter, 
+    link: "https://twitter.com/React_BA" },
+  {
+    name: "instagram",
+    src: instagram,
+    link: "https://www.instagram.com/reactbuenosaires",
+  },
 ];
 
 export default function SocialMediaBanner() {
@@ -18,13 +32,16 @@ export default function SocialMediaBanner() {
       {icons.map((icon, index) => {
         return (
           <div className={style.icon_container} key={index}>
-            <Image
-              className={style.icon}
-              src={icon.src}
-              alt="text"
-              width={18}
-              height={18}
-            />
+            <a href={icon.link} target="blank">
+              <Image
+                className={style.icon}
+                src={icon.src}
+                alt="text"
+                width={18}
+                height={18}
+                title={icon.name}
+              />
+            </a>
           </div>
         );
       })}

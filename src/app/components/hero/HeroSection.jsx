@@ -22,8 +22,19 @@ export default function HeroSection() {
         </p>
         <div className="justify-center">
           <Button>
-            <a target="blank" className={style.link} href="https://www.meetup.com/es/react-en-buenos-aires">
-              ¡Sumate! <Image src={icon} alt="text" width={20} height={20} />
+            <a
+              target="blank"
+              className={style.link}
+              href="https://www.meetup.com/es/react-en-buenos-aires"
+            >
+              ¡Sumate!{" "}
+              <Image
+                className={style.icon}
+                src={icon}
+                alt="text"
+                width={20}
+                height={20}
+              />
             </a>
           </Button>
         </div>

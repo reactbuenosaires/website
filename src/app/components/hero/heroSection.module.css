@@ -44,6 +44,12 @@
 .link {
   text-decoration: none;
   color: var(--black);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: .5rem;
 }
 
 .inner_title_container {
@@ -57,13 +63,13 @@
 .span1 {
   position: absolute;
   color: var(--primary-color);
-  animation: animation1 6s ease-in-out infinite;
+  animation: animation1 5s ease-in-out infinite;
 }
 
 .span2 {
   position: absolute;
   color: var(--primary-color);
-  animation: animation2 6s ease-in-out infinite;
+  animation: animation2 5s ease-in-out infinite;
 }
 
 @keyframes animation1 {

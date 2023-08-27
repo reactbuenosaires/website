@@ -1,5 +1,6 @@
 :root {
   --primary-color: #00d8ff;
+  --sky-blue: #6ed9ff;
   --blue: #1f7e9f;
   --deep-blue: #254f7f;
 
@@ -47,6 +48,12 @@ body {
   border-radius: 10px;
   color: var(--black);
   background: var(--primary-color);
+}
+
+.main-button:hover {
+  background: var(--sky-blue);
+  border: 1px solid;
+  border: double;
 }
 
 .btn {
