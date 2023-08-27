@@ -2,7 +2,7 @@ import sponsor from '../../../public/conferenceRoom.jpg';
 import speaker from '../../../public/microphone.jpg';
 import Image from 'next/image';
 import style from '../components/proposal_sponsor/proposal.module.css'
-import Boton from './Boton';
+import Button from './Button';
 
 const images = [
     {
@@ -24,7 +24,7 @@ export default function ProposalSponsor(props) {
                 images.map((card, index) => {
                     return <div  key={index} className={style.action_Card}>
                         <Image src={card.src} alt='text' width={150} />
-                        <Boton action={card.text} />
+                        <Button action={card.text} />
                     </div>
                 })
             }
