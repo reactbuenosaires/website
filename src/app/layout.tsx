@@ -1,4 +1,4 @@
-import style from '@/app/global.module.css'
+import '@/app/global.css';
 import NavBar from '@/app/components/navBar/NavBar';
 import RedesSociales from './components/redesSocialesIcons/RedesSociales';
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={style.body}>
+      <body>
         <NavBar></NavBar>
         {children}
         <RedesSociales />
