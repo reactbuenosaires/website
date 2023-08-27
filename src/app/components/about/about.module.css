@@ -1,5 +1,5 @@
 .subtitle {
-    color: #00D8FF;
+    color: var(--primary-color);
     text-align: center;
     opacity: 0.4;
     font-weight: 400;

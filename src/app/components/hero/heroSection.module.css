@@ -24,7 +24,7 @@
   justify-content: center;
   position: absolute;
   top: 25%;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .title {
@@ -35,7 +35,7 @@
 }
 
 .description {
-  color: #ffffff;
+  color: var(--white);
   margin: 2rem;
   font-size: 1.3rem;
   text-align: center;
@@ -43,7 +43,7 @@
 
 .link {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .inner_title_container {
@@ -56,13 +56,13 @@
 /* Animation code */
 .span1 {
   position: absolute;
-  color: #00d8ff;
+  color: var(--primary-color);
   animation: animation1 6s ease-in-out infinite;
 }
 
 .span2 {
   position: absolute;
-  color: #00d8ff;
+  color: var(--primary-color);
   animation: animation2 6s ease-in-out infinite;
 }
 
