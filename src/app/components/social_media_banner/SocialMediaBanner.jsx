@@ -14,16 +14,16 @@ const icons = [
 
 export default function SocialMediaBanner() {
   return (
-    <div className={style.rrss}>
+    <div className={style.social_media_container}>
       {icons.map((icon, index) => {
         return (
-          <div key={index}>
+          <div className={style.icon_container} key={index}>
             <Image
-              className={style.icons}
+              className={style.icon}
               src={icon.src}
               alt="text"
-              width={10}
-              height={10}
+              width={18}
+              height={18}
             />
           </div>
         );
