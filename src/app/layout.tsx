@@ -1,6 +1,6 @@
 import '@/app/global.css';
 import MainHeader from '@/app/components/header/MainHeader';
-import RedesSociales from './components/redesSocialesIcons/RedesSociales';
+import SocialMediaBanner from './components/social_media_banner/SocialMediaBanner';
 
 export const metadata = {
   title: 'React en Buenos Aires',
@@ -16,7 +16,7 @@ export default function RootLayout({
       <body>
         <MainHeader />
         {children}
-        <RedesSociales />
+        <SocialMediaBanner />
       </body>
     </html>
   )
