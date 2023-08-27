@@ -19,6 +19,19 @@ body {
     text-align: center;
 }
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.main-button {
+    font-size: 1.4rem;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    background: #00d8ff;
+}
+
 .btn {
     padding: 1px;
     display: flex;

@@ -18,6 +18,15 @@
 }
 
 /* Style container title */
+.title_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    color: #ffffff;
+}
+
 .title {
     text-align: center;
     font-size: 1.8rem;
@@ -25,11 +34,11 @@
     padding: 10px;
 }
 
-.title_container {
-    align-items: center;
-    position: absolute;
-    top: 30%;
+.description {
     color: #ffffff;
+    margin: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .inner_title_container {
