@@ -25,6 +25,8 @@ body {
 }
 
 .main-button {
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
     padding: 15px;
     border-radius: 10px;
@@ -51,4 +53,11 @@ body {
     background: rgb(2, 0, 36);
     background: linear-gradient(214deg, rgba(2, 0, 36, 1) 0%, rgba(14, 23, 56, 1) 28%, rgba(9, 86, 122, 1) 67%, rgba(0, 212, 255, 1) 100%);
     scale: 1.1;
+}
+
+@media (min-width: 540px) {
+    .main-button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 }
