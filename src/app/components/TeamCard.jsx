@@ -1,6 +1,5 @@
 import Image from "next/image"
 import style from '@/app/components/team/reactTeam.module.css'
-import person from '../../../public/aboutImages/people.jpg'
 export default function TeamCard(props) {
     return (
         <div >

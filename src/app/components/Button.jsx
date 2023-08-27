@@ -1,7 +1,3 @@
-export default function Button(props) {
-    return (
-        <div className="btn">
-            {props.action}
-        </div>
-    )
+export default function Button({ children }) {
+  return <button className="main-button">{children}</button>;
 }

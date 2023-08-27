@@ -1,8 +1,8 @@
 import style from "@/app/components/social_media_banner/SocialMediaBanner.module.css";
-import instagram from "../../../../public/icons/instagram.svg";
-import youtube from "../../../../public/icons/youtube.svg";
-import twitter from "../../../../public/icons/x-twitter.svg";
-import meetUp from "../../../../public/icons/meetup.svg";
+import instagram from "@/app/assets/icons/instagram.svg";
+import youtube from "@/app/assets/icons/youtube.svg";
+import twitter from "@/app/assets/icons/x-twitter.svg";
+import meetUp from "@/app/assets/icons/meetup.svg";
 import Image from "next/image";
 
 const icons = [

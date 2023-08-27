@@ -1,7 +1,7 @@
-import speaker from '../../../public/aboutImages/speaker.jpg'
-import stage from '../../../public/aboutImages/conferenceRoom.jpg'
-import people from '../../../public/aboutImages/people.jpg'
-import code from '../../../public/aboutImages/code.jpg'
+import speaker from '@/app/assets/images/speaker.jpg'
+import stage from '@/app/assets/images/conferenceRoom.jpg'
+import people from '@/app/assets/images/people.jpg'
+import code from '@/app/assets/images/code.jpg'
 import Image from 'next/image'
 import style from '@/app/components/about/about.module.css'
 

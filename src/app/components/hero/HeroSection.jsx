@@ -1,4 +1,7 @@
 import style from "@/app/components/hero/heroSection.module.css";
+import icon from "@/app/assets/icons/external-link.svg";
+import Button from "../Button";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -14,10 +17,13 @@ export default function HeroSection() {
           desarrolladores
         </div>
         <p className={style.description}>
-          ¡Seguinos en el Meetup de React en Buenos Aires para enterarte de los próximos eventos!
+          ¡Seguinos en el Meetup de React en Buenos Aires para enterarte de los
+          próximos eventos!
         </p>
         <div className="justify-center">
-          <button className="main-button">¡Sumáte!</button>
+          <Button>
+            ¡Sumate! <Image src={icon} alt="text" width={20} height={20} />
+          </Button>
         </div>
       </div>
     </div>

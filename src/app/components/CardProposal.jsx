@@ -1,8 +1,7 @@
-import sponsor from '../../../public/conferenceRoom.jpg';
-import speaker from '../../../public/microphone.jpg';
+import sponsor from '@/app/assets/conferenceRoom.jpg';
+import speaker from '@/app/assets/microphone.jpg';
 import Image from 'next/image';
 import style from '../components/proposal_sponsor/proposal.module.css'
-import Button from './Button';
 
 const images = [
     {
@@ -24,7 +23,9 @@ export default function ProposalSponsor(props) {
                 images.map((card, index) => {
                     return <div  key={index} className={style.action_Card}>
                         <Image src={card.src} alt='text' width={150} />
-                        <Button action={card.text} />
+                        <div className="btn">
+                            {card.text}
+                        </div>
                     </div>
                 })
             }
