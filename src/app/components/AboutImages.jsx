@@ -13,7 +13,7 @@ const images = [
 ];
 export default function AboutImages() {
   return (
-    <div className={style.container}>
+    <div className={style.container_Images}>
       {images.map((img, index) => {
         return (
           <div className={style.card} key={index}>
@@ -21,10 +21,9 @@ export default function AboutImages() {
               className={style.img}
               src={img.src}
               alt="text"
-              width={150}
-              height={100}
+              width={300}
+              height={200}
             />
-            <p className={style.container_text}>{img.text}</p>
           </div>
         );
       })}

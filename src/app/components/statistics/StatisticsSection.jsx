@@ -17,8 +17,7 @@ const images = [
 export default function StatisticsSection() {
   return (
     <section>
-      <Title title="React BA en numeros" />
-
+      <Title titleDescription="REACT BA EN NÚMEROS" />
       <div className={style.images_container}>
         {images.map((image, index) => (
           <div className={style.stat_card_container} key={index}>

@@ -2,31 +2,36 @@
     color: var(--primary-color);
     text-align: center;
     opacity: 0.4;
-    font-weight: 400;
     line-height: 15px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: --lighter-gray;
 }
 
-.text {
+.text_Description {
     position: relative;
-    color: white;
+    color: var(--white);
     font-weight: 300;
     text-align: center;
     margin: 10px;
-    font-size: 1em;
+    font-size: 1.8rem;
     word-spacing: 4.5px;
 }
 
-.text>span {
-    display: flex;
-    margin-top: 0.9em;
+.last_Text_Description {
+    font-size: 1.8rem;
+    padding-top: 2em;
     font-weight: 700;
+    text-align: center;
+    color: var(--white);
 }
 
-.container {
+.container_Images {
     display: flex;
-    gap: 10px;
+    margin: 4rem 0;
+    /* gap: 10px; */
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .card {
@@ -41,8 +46,6 @@
 .container_text:hover,
 .img:hover {
     opacity: 1;
-    scale: 1.1;
-    cursor: pointer;
 }
 
 .container_text {
@@ -53,4 +56,27 @@
     color: white;
     align-items: center;
     font-weight: 500;
+}
+
+/* Estilos para galaxy fold */
+@media (max-width: 320px) {
+    .subtitle {
+        line-height: 30px;
+    }
+    .textDescription{
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        line-height: 30px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
 }
