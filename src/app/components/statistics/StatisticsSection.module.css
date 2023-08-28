@@ -1,0 +1,43 @@
+.images_container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat_card_container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.stat_card_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 1));
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: end;
+  margin: 0;
+  width: 150px;
+  color: var(--secondary-white);
+}

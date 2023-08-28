@@ -1,6 +1,7 @@
-import HeroSection from "./components/hero/HeroSection";
 import { Open_Sans } from "next/font/google";
+import HeroSection from "./components/hero/HeroSection";
 import About from "./components/about/AboutSection";
+import StatisticsSection from "./components/statistics/StatisticsSection";
 import ProposalSponsor from "@/app/components/proposal_sponsor/ProposalSponsor";
 import ReactTeam from "./components/team/RactTeam";
 
@@ -11,6 +12,7 @@ export default function Home() {
     <main className={open.className}>
       <HeroSection />
       <About />
+      <StatisticsSection />
       <ProposalSponsor />
       <ReactTeam />
     </main>

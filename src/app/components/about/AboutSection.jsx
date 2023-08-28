@@ -11,7 +11,7 @@ export default function AboutSection(props) {
         de React Js y cualquier derivado de React Native, Redux,
         React-bootstrap, Material U-I y más.
       </p>
-      <AboutImages></AboutImages>
+      <AboutImages />
       <p className="text">
         Las meetups son el espacio perfecto para compartir conocimiento, hablar
         de tecnología y desarrollar nuevos projecto. <br />
