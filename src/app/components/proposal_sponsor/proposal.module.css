@@ -1,8 +1,45 @@
+.container_cards{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .action_Card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
     position: relative;
-    border-radius: 5px;
+    object-fit: cover;
 }
+
+.text_Description {
+    font-size: 1.8rem;
+    position: relative;
+    color: var(--white);
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    word-spacing: 4.5px;
+}
+
+.action_buttons{
+    position: relative;
+    top: -150px;
+    left: 50px;
+    padding: 1em;
+    background-color: var(--deep-blue);
+    max-width: fit-content;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.action_buttons:hover{
+    cursor: pointer;
+    scale: 0.9;
+    color: var(--white);
+}
+
