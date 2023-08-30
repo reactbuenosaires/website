@@ -5,15 +5,15 @@
 .teamCard {
     display: flex;
     border-radius: 5px;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 0.9em;
 }
 
 .teamMember {
     display: flex;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 23, 56, 1) 35%, rgba(14, 23, 56, 0.5551470588235294) 100%);
     width: 100px;
-    padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--black);
     width: 100%;
@@ -23,16 +23,19 @@
 .memberData {
     display: flex;
     flex-direction: column;
+    color: var(--white);
+    padding: 01rem 0 2rem;
 }
 
 .memberData h5,
-.memberData p,
-.memberData div {
-    margin: 0;
-    padding-left: 5px;
-    color: var(--white);
+.memberData p {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
 }
 
 .borderPic {
+    padding:0.5rem 0.4rem;
     border-radius: 50%;
+    object-fit: cover;
 }

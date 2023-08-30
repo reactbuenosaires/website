@@ -1,8 +1,9 @@
 .container_cards{
     padding-top: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 
 .action_Card {
@@ -12,6 +13,7 @@
     padding: 10px;
     position: relative;
     object-fit: cover;
+    text-decoration: none;
 }
 
 .text_Description {
@@ -39,7 +41,13 @@
 
 .action_buttons:hover{
     cursor: pointer;
-    scale: 0.9;
     color: var(--white);
 }
 
+.action_Card:hover{
+    filter: blur(2px);
+}
+
+@media (max-width: 320px) {
+
+}

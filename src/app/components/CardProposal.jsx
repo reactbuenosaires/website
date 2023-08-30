@@ -32,12 +32,10 @@ export default function ProposalSponsor(props) {
                           height={250}
                         />
                         <Link 
+                          className={style.action_buttons}
                           href={'https://www.google.com/'}
                           target='blank'>
-                          <div 
-                            className={style.action_buttons}>
                             {card.text}
-                          </div>
                         </Link>
                     </div>
                 })
