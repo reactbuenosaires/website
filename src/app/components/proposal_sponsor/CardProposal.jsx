@@ -1,7 +1,7 @@
 import sponsor from "@/app/assets/conferenceRoom.jpg";
 import speaker from "@/app/assets/microphone.jpg";
 import Image from "next/image";
-import style from "../components/proposal_sponsor/proposal.module.css";
+import style from "../proposal_sponsor/proposal.module.css";
 import Link from "next/link";
 
 const images = [

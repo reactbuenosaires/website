@@ -1,4 +1,4 @@
-import AboutImages from "@/app/components/AboutImages";
+import AboutImages from "@/app/components/about/AboutImages";
 import Title from "@/app/components/Title";
 import style from "@/app/components/about/about.module.css";
 

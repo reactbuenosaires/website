@@ -1,4 +1,4 @@
-import TeamCard from "../TeamCard";
+import TeamCard from "@/app/components/team/TeamCard";
 import picMember from "@/app/assets/people.jpg";
 import network1 from "@/app/assets/icons/x-twitter.svg";
 import style from "@/app/components/team/reactTeam.module.css";
