@@ -48,6 +48,9 @@
     filter: blur(2px);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
+    .action_Card{
+        width: 80vw;
+    }
 
 }

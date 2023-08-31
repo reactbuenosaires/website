@@ -23,7 +23,7 @@ body {
 
 .titles {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 900;
   padding: 1.5em 0 0.1em;
   color: var(--white);
@@ -94,5 +94,11 @@ body {
   .main-button {
     font-size: 1.2rem;
     padding: 10px;
+  }
+}
+
+@media (max-width: 390px){
+  .titles{
+    font-size: 2.2rem;
   }
 }
