@@ -1,19 +1,47 @@
-.container_cards{
+.container_cards {
     padding-top: 2rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 5px;
+    gap: 1rem;
 }
 
-.action_Card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
+.card {
+    width: 420px;
+    height: 300px;
+    border-radius: 2px;
+    overflow: hidden;
     position: relative;
+    cursor: pointer;
+}
+
+.img_card {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    text-decoration: none;
+    border-radius: 2px;
+    position: relative;
+}
+
+.description {
+    width: 100%;
+    height: 100%;
+    top: 100vh;
+    color: var(--white);
+    position: absolute;
+    background: #254f7fb0;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+}
+
+.description h3,
+.description p {
+    padding-left: 10px;
+}
+
+.card:hover .description {
+    top: 0vh;
 }
 
 .text_Description {
@@ -26,31 +54,30 @@
     word-spacing: 4.5px;
 }
 
-.action_buttons{
+.action_buttons {
     position: relative;
-    top: -150px;
+    bottom: 50px;
     left: 50px;
-    padding: 1em;
+    padding: 0.6em;
     background-color: var(--deep-blue);
-    max-width: fit-content;
     border-radius: 5px;
     color: black;
     font-weight: 500;
     text-decoration: none;
 }
 
-.action_buttons:hover{
+.action_buttons:hover {
     cursor: pointer;
     color: var(--white);
 }
 
-.action_Card:hover{
+.action_Card:hover {
     filter: blur(2px);
 }
 
 @media (max-width: 390px) {
-    .action_Card{
-        width: 80vw;
+    .card {
+        width: 310px;
+        height: 200px;
     }
-
 }
