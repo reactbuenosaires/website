@@ -21,8 +21,13 @@ export default function StatisticsSection() {
       <div className={style.images_container}>
         {images.map((image, index) => (
           <div className={style.stat_card_container} key={index}>
-            <Image className={style.image} src={image.src} alt={image.description} />
-            <p className={style.text}>{image.text}</p>
+            <Image className={style.image} 
+              src={image.src} 
+              alt={image.description} 
+            />
+            <p className={style.text}>
+              {image.text}
+            </p>
           </div>
         ))}
       </div>

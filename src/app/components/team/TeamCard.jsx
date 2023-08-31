@@ -19,7 +19,8 @@ export default function TeamCard(props) {
                           src={props.networkUrl} 
                           alt='text' 
                           width={15} 
-                          height={15} />
+                          height={15} 
+                        />
                 </div>
             </div>
         </div>
