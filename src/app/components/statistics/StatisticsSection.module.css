@@ -41,3 +41,27 @@
   width: 150px;
   color: var(--secondary-white);
 }
+
+/* Estilos para tablet */
+@media (min-width: 786px) and (max-width: 1200px) {
+  .images_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .stat_card_container {
+    margin-bottom: 0;
+  }
+}
+
+/* Estilos para desktop */
+@media (min-width: 1200px) {
+  .images_container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .stat_card_container {
+    margin-bottom: 0;
+    height: 150px;
+  }
+}

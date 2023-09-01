@@ -154,6 +154,7 @@
   }
 }
 
+/* Estilos para desktop */
 @media (min-width: 1200px) {
   .main-button {
     padding: 15px;
