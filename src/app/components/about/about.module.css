@@ -14,8 +14,9 @@
     font-weight: 300;
     text-align: center;
     margin: 10px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     word-spacing: 4.5px;
+    padding: 0px 1.2rem;
 }
 
 .last_Text_Description {

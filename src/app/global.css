@@ -23,7 +23,7 @@ body {
 
 .titles {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 900;
   padding: 1.5em 0 0.1em;
   color: var(--white);
