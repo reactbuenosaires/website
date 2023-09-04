@@ -99,6 +99,7 @@ body {
 
 @media (max-width: 390px){
   .titles{
-    font-size: 2.2rem;
+    font-size: 1.4rem;
+    padding:0px 40px;
   }
 }
