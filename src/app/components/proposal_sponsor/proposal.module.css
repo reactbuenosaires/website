@@ -1,5 +1,5 @@
 .container_cards {
-    padding-top: 2rem;
+    padding: 0px 40px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -8,8 +8,6 @@
 }
 
 .card {
-    width: 420px;
-    height: 300px;
     border-radius: 2px;
     overflow: hidden;
     position: relative;
@@ -25,13 +23,8 @@
 }
 
 .description {
-    width: 100%;
-    height: 100%;
-    top: 100vh;
-    color: var(--white);
-    position: absolute;
+    display:  flex;
     background: #254f7fb0;
-    backdrop-filter: blur(5px);
     transition: 1s;
 }
 
