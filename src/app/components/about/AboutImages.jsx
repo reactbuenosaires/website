@@ -17,11 +17,7 @@ export default function AboutImages() {
       {images.map((img, index) => {
         return (
           <div className={style.card} key={index}>
-            <Image
-              className={style.img}
-              src={img.src}
-              alt="text"
-            />
+            <Image className={style.img} src={img.src} alt="text" />
           </div>
         );
       })}
