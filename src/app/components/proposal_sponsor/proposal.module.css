@@ -80,4 +80,8 @@
         width: 310px;
         height: 200px;
     }
+    .text_Description{
+        font-size: 1rem;
+        padding: 0px 40px;
+    }
 }

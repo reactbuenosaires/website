@@ -21,8 +21,6 @@ export default function AboutImages() {
               className={style.img}
               src={img.src}
               alt="text"
-              width={300}
-              height={200}
             />
           </div>
         );
