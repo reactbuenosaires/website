@@ -16,7 +16,7 @@ const images = [
 
 export default function StatisticsSection() {
   return (
-    <section>
+    <section className={style.statistics_container}>
       <Title titleDescription="REACT BA EN NÚMEROS" />
       <div className={style.images_container}>
         {images.map((image, index) => (

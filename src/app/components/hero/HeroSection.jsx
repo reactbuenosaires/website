@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className={style.hero_container}>
+    <section className={style.hero_container}>
       <div className={style.hero_bg}></div>
       <div className={style.title_container}>
         <div className={style.title}>
@@ -39,6 +39,6 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

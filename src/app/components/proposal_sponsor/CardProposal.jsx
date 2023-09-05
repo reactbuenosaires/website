@@ -24,7 +24,7 @@ const images = [
 
 export default function ProposalSponsor(props) {
   return (
-    <div className={style.container_cards}>
+    <section className={style.container_cards}>
       {images.map((card, index) => {
         return (
           <div className={style.card} key={index}>
@@ -48,6 +48,6 @@ export default function ProposalSponsor(props) {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }

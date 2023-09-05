@@ -1,5 +1,9 @@
+.statistics_container {
+  padding-top: 3rem;
+}
+
 .images_container {
-  padding: 40px;
+  padding: 2.5rem 2.5rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -10,6 +14,10 @@
   height: 100px;
   margin-bottom: 2rem;
   border-radius: 10px;
+}
+
+.stat_card_container:last-child {
+  margin-bottom: 0;
 }
 
 .stat_card_container::before {

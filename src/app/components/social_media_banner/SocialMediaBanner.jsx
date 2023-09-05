@@ -28,7 +28,7 @@ const icons = [
 
 export default function SocialMediaBanner() {
   return (
-    <div className={style.social_media_container}>
+    <section className={style.social_media_container}>
       {icons.map((icon, index) => {
         return (
           <div className={style.icon_container} key={index}>
@@ -45,6 +45,6 @@ export default function SocialMediaBanner() {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }

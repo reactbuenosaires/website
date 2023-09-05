@@ -6,7 +6,7 @@
   backdrop-filter: blur(9px) saturate(96%);
   background: rgba(255, 255, 255, 0.04);
   border-top: 1px solid rgba(209, 213, 219, 0.3);
-  padding: 5px;
+  padding: 5px 2rem;
 }
 
 .icon_container {
