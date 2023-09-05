@@ -33,9 +33,9 @@ const memberTeam = [
 
 export default function ReactTeam(props) {
   return (
-    <div className={style.teamComponent}>
+    <div className={style.team_container}>
       <Title titleDescription={"ORGANIZADORES"} />
-      <div className={style.teamCard}>
+      <div className={style.card_container}>
         {memberTeam.map((member, index) => {
           return (
             <div key={index}>

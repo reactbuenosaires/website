@@ -1,13 +1,16 @@
-.teamComponent {
-    padding-bottom: 5em;
+.team_container {
+    padding: 3rem 2.5rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.teamCard {
+.card_container {
     display: flex;
     border-radius: 5px;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.9em;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .teamMember {
