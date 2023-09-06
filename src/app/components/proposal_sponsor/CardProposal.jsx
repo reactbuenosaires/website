@@ -17,7 +17,7 @@ const images = [
     alt: "Speaker Microphone",
     src: speaker,
     text: "Speaker",
-    description: "¿Tenés algo que decir?. ¡Vení a contarnos!",
+    description: "¿Tenés algo que decir? ¡Vení a contarnos!",
     form_Link: "https://www.google.com/",
   },
 ];
