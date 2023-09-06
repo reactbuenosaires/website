@@ -122,6 +122,8 @@
   .card {
     height: 150px;
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -130,6 +132,11 @@
   }
   .text {
     font-size: 1.2rem;
+  }
+
+  .text_description{
+    font-size: 1.2rem;
+    margin: 10px 0px;
   }
 }
 
