@@ -28,11 +28,11 @@ const icons = [
 const MainFooter = () => {
   return (
     <footer className={style.footer}>
-      <section>
+      <section className={style.footer_section}>
         <p className={style.text}>Siguenos en nuestras redes</p>
-        <ul className={style.social_media_container}>
+        <div className={style.social_media_container}>
           {icons.map((icon, index) => (
-            <li key={index}>
+            <div key={index}>
               <a href={icon.link} target="blank">
                 <Image
                   className={style.icon}
@@ -43,13 +43,13 @@ const MainFooter = () => {
                   title={icon.name}
                 />
               </a>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
-      <section>
+      <section className={style.footer_text}>
         <p className={style.text}>Contactanos</p>
-        <a href="mailto:reactjs.ba@gmail.com">reactjs.ba@gmail.com</a>
+        <a href="mailto:reactjs.ba@gmail.com" className={style.mailto}>reactjs.ba@gmail.com</a>
       </section>
       {/* <section className={style.social_media_section}>
         <p className={style.text}>Siguenos en nuestras redes</p>

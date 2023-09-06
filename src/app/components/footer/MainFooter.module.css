@@ -17,6 +17,7 @@
 
 .social_media_container {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -26,6 +27,16 @@
   border-radius: 50%;
   padding: 6px;
   opacity: 0.7;
+}
+
+.footer_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailto{
+  color: white;
 }
 
 .copyrigth {
