@@ -30,15 +30,21 @@
   word-spacing: 4.5px;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+}
+
 .motivation_container {
   font-size: 1.2rem;
-  padding: 2.5rem 0;
+  padding: 2rem 1rem;
   margin: 0 2.5rem;
   font-weight: 400;
   text-align: center;
   color: var(--secondary-white);
-  background: rgba(236, 229, 229, 0.18);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 0.9px solid white;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 .container_Images {
@@ -52,7 +58,6 @@
   position: relative;
   width: 100%;
   height: 100px;
-  /* margin-bottom: 2rem; */
   border-radius: 10px;
 }
 
