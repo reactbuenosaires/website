@@ -42,3 +42,11 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+@media (min-width:600px) and (max-width:800px){
+    .card_container{
+        display:grid; 
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
