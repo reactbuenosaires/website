@@ -75,7 +75,7 @@
   /* Color del texto del botón */
   border: solid 1px var(--primary-color) ;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .action_buttons:hover {
