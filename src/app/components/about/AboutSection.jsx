@@ -7,14 +7,14 @@ export default function AboutSection(props) {
     <section className={style.about_container}>
       <Title titleDescription="¿QUIÉNES SOMOS?" />
       <section className={style.section_container}>
-        <h3 className={style.subtitle}>
-          Aprendemos, conectamos, crecemos e iteramos
-        </h3>
         <p className={style.text_description}>
           Somos una comunidad para compartir conocimientos de los últimos
           avances de React Js y cualquier derivado de React Native, Redux,
           React-bootstrap, Material U-I y más.
         </p>
+        <h3 className={style.subtitle}>
+          Aprendemos, conectamos, crecemos e iteramos
+        </h3>
       </section>
       <AboutImages />
       <section className={style.text_container}>
