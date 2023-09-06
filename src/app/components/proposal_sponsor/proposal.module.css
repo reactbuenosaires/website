@@ -18,7 +18,7 @@
 /* Estilos generales para las cards */
 .container_cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
   /* Espacio entre las cards */
