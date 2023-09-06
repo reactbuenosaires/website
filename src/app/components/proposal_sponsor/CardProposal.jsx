@@ -28,13 +28,13 @@ export default function ProposalSponsor(props) {
       {images.map((card, index) => {
         return (
           <div className={style.card} key={index}>
-            <Image
+            {/* <Image
               className={style.img_card}
               src={card.src}
               alt={images.alt}
               // width={300}
               // height={200}
-            />
+            /> */}
             <div className={style.description}>
               <p>{card.description}</p>
               <a
