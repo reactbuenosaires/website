@@ -1,26 +1,29 @@
 import React from "react";
 import style from "./MainFooter.module.css";
-import instagram from "@/app/assets/icons/instagram.svg";
-import youtube from "@/app/assets/icons/youtube.svg";
-import twitter from "@/app/assets/icons/x-twitter.svg";
-import meetUp from "@/app/assets/icons/meetup.svg";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMeetup,
+  faYoutube,
+  faXTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const icons = [
+const socialMedia = [
   {
     name: "meetup",
-    src: meetUp,
+    icon: faMeetup,
     link: "https://www.meetup.com/es/react-en-buenos-aires",
   },
   {
     name: "youtube",
-    src: youtube,
+    icon: faYoutube,
     link: "https://www.youtube.com/@ReactJSBuenosAires",
   },
-  { name: "twitter", src: twitter, link: "https://twitter.com/React_BA" },
+  { name: "twitter", icon: faXTwitter, link: "https://twitter.com/React_BA" },
   {
     name: "instagram",
-    src: instagram,
+    icon: faInstagram,
     link: "https://www.instagram.com/reactbuenosaires",
   },
 ];
@@ -31,17 +34,10 @@ const MainFooter = () => {
       <section className={style.footer_section}>
         <p className={style.text}>Puedes encontrarnos en:</p>
         <div className={style.social_media_container}>
-          {icons.map((icon, index) => (
+          {socialMedia.map((network, index) => (
             <div key={index}>
-              <a href={icon.link} target="blank">
-                <Image
-                  className={style.icon}
-                  src={icon.src}
-                  alt="text"
-                  width={25}
-                  height={25}
-                  title={icon.name}
-                />
+              <a href={network.link} target="blank">
+                <FontAwesomeIcon icon={network.icon} className={style.social_media_icon} />
               </a>
             </div>
           ))}
@@ -49,7 +45,10 @@ const MainFooter = () => {
       </section>
       <section className={style.footer_text}>
         <p className={style.text}>Contactanos</p>
-        <a href="mailto:reactjs.ba@gmail.com" className={style.mailto}>reactjs.ba@gmail.com</a>
+        <a href="mailto:reactjs.ba@gmail.com" className={style.mailto}>
+          <FontAwesomeIcon icon={faEnvelope} className={style.icon}/>
+          reactjs.ba@gmail.com
+        </a>
       </section>
       <section className={style.copyrigth}>
         <p className={style.text}>© React Buenos Aires 2023</p>

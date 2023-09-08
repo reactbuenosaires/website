@@ -50,6 +50,9 @@
 
 .icon {
   margin-left: .5rem;
+  color: var(--black);
+  width: 15px;
+  height: 15px;
 }
 
 .inner_title_container {

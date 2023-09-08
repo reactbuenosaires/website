@@ -1,33 +1,33 @@
 import TeamCard from "@/app/components/team/TeamCard";
 import picMember from "@/app/assets/people.jpg";
-import network1 from "@/app/assets/icons/x-twitter.svg";
 import style from "@/app/components/team/reactTeam.module.css";
 import Title from "@/app/components/Title";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const memberTeam = [
   {
     name: "Person1",
     role: "Role1",
     urlImage: picMember,
-    network: network1,
+    network: faXTwitter,
   },
   {
     name: "Person2",
     role: "Role2",
     urlImage: picMember,
-    network: network1,
+    network: faXTwitter,
   },
   {
     name: "Person3",
     role: "Role3",
     urlImage: picMember,
-    network: network1,
+    network: faXTwitter,
   },
   {
     name: "Person4",
     role: "Role4",
     urlImage: picMember,
-    network: network1,
+    network: faXTwitter,
   },
 ];
 

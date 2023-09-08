@@ -1,27 +1,27 @@
 import style from "@/app/components/social_media_banner/SocialMediaBanner.module.css";
-import instagram from "@/app/assets/icons/instagram.svg";
-import youtube from "@/app/assets/icons/youtube.svg";
-import twitter from "@/app/assets/icons/x-twitter.svg";
-import meetUp from "@/app/assets/icons/meetup.svg";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMeetup,
+  faYoutube,
+  faXTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
-const icons = [
+const socialMedia = [
   {
     name: "meetup",
-    src: meetUp,
+    icon: faMeetup,
     link: "https://www.meetup.com/es/react-en-buenos-aires",
   },
   {
     name: "youtube",
-    src: youtube,
+    icon: faYoutube,
     link: "https://www.youtube.com/@ReactJSBuenosAires",
   },
-  { name: "twitter", 
-    src: twitter, 
-    link: "https://twitter.com/React_BA" },
+  { name: "twitter", icon: faXTwitter, link: "https://twitter.com/React_BA" },
   {
     name: "instagram",
-    src: instagram,
+    icon: faInstagram,
     link: "https://www.instagram.com/reactbuenosaires",
   },
 ];
@@ -29,18 +29,11 @@ const icons = [
 export default function SocialMediaBanner() {
   return (
     <section className={style.social_media_container}>
-      {icons.map((icon, index) => {
+      {socialMedia.map((network, index) => {
         return (
           <div className={style.icon_container} key={index}>
-            <a href={icon.link} target="blank">
-              <Image
-                className={style.icon}
-                src={icon.src}
-                alt="text"
-                width={18}
-                height={18}
-                title={icon.name}
-              />
+            <a href={network.link} target="blank">
+              <FontAwesomeIcon icon={network.icon} className={style.icon} />
             </a>
           </div>
         );

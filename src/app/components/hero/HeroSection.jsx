@@ -1,7 +1,7 @@
 import style from "@/app/components/hero/heroSection.module.css";
-import icon from "@/app/assets/icons/external-link.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -27,13 +27,10 @@ export default function HeroSection() {
               className={style.link}
               href="https://www.meetup.com/es/react-en-buenos-aires"
             >
-              ¡Sumate!{" "}
-              <Image
+              ¡Sumate!
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
                 className={style.icon}
-                src={icon}
-                alt="text"
-                width={20}
-                height={20}
               />
             </a>
           </Button>
