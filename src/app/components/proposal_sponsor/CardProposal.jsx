@@ -1,8 +1,7 @@
-import sponsor from "@/app/assets/conferenceRoom.jpg";
-import speaker from "@/app/assets/microphone.jpg";
 import Image from "next/image";
 import style from "../proposal_sponsor/proposal.module.css";
-import Link from "next/link";
+import speaker from "@/app/assets/icons/microphone.svg";
+import sponsor from "@/app/assets/icons/handshake.svg";
 
 const images = [
   {
@@ -28,22 +27,16 @@ export default function ProposalSponsor(props) {
       {images.map((card, index) => {
         return (
           <div className={style.card} key={index}>
-            {/* <Image
-              className={style.img_card}
-              src={card.src}
-              alt={images.alt}
-              // width={300}
-              // height={200}
-            /> */}
             <div className={style.description}>
+              <div className={style.icon_container}>
+                <Image className={style.icon} src={card.src} alt={images.alt} />
+              </div>
               <p>{card.description}</p>
-              <a
-                className={style.action_buttons}
-                href={card.form_Link}
-                target="blank"
-              >
-                {card.text}
-              </a>
+              <button className={style.action_button}>
+                <a href={card.form_Link} target="blank">
+                  {card.text}
+                </a>
+              </button>
             </div>
           </div>
         );
