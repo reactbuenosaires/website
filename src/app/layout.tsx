@@ -1,5 +1,4 @@
 import '@/app/global.css';
-import MainHeader from '@/app/components/header/MainHeader';
 import MainFooter from "@/app/components/footer/MainFooter";
 import SocialMediaBanner from './components/social_media_banner/SocialMediaBanner';
 
@@ -15,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MainHeader />
         {children}
         <MainFooter />
         <SocialMediaBanner />
