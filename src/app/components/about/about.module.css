@@ -1,5 +1,5 @@
 .about_container {
-  padding-top: 3rem;
+  padding-top: 8rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
   text-align: center;
   line-height: 15px;
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: var(--text-font-size);
   margin: 2rem 0;
   color: var(--sky-blue);
 }
@@ -26,18 +26,19 @@
   color: var(--white);
   font-weight: 300;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: var(--text-font-size);
   word-spacing: 4.5px;
   margin: 2rem 5rem;
 }
 
-.container{
+.sentence_container {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .motivation_container {
-  font-size: 1.2rem;
+  font-size: var(--text-font-size);
   padding: 2rem 1rem;
   margin: 0 2.5rem;
   font-weight: 400;
@@ -45,7 +46,7 @@
   color: var(--secondary-white);
   background: var(--deep-blue);
   border: solid 2px var(--blue);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   width: fit-content;
 }
 
@@ -60,7 +61,7 @@
   position: relative;
   width: 100%;
   height: 100px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 .card::before {
@@ -98,17 +99,17 @@
 @media (max-width: 320px) {
   .subtitle {
     line-height: 30px;
-    font-size: 1.2rem;
+    font-size: var(--mb-font-size);
   }
   .text_description {
-    font-size: 1rem;
+    font-size: var(--mb-font-size);
     margin: 10px 0px;
   }
   .text {
-    font-size: 1rem;
+    font-size: var(--mb-font-size);
   }
   .text_motivation {
-    font-size: 1.2rem;
+    font-size: var(--mb-font-size);
     font-weight: 500;
   }
 }
@@ -131,11 +132,10 @@
     line-height: 30px;
   }
   .text {
-    font-size: 1.2rem;
+    font-size: var(--mb-font-size);
   }
-
   .text_description{
-    font-size: 1.2rem;
+    font-size: var(--mb-font-size);
     margin: 10px 0px;
   }
 }

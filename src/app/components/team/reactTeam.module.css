@@ -1,12 +1,12 @@
 .team_container {
-    padding: 3rem 2.5rem 6rem;
+    padding: 8rem 2.5rem 6rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .card_container {
     display: flex;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
@@ -17,7 +17,7 @@
     display: flex;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 23, 56, 1) 35%, rgba(14, 23, 56, 0.5551470588235294) 100%);
     width: 100px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: 1px solid var(--black);
     width: 100%;
     margin: 0.5em;

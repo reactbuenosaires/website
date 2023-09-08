@@ -12,6 +12,11 @@
   --black: #000000;
   --white: #ffffff;
   --secondary-white: #f4f4f4;
+
+  --border-radius: 10px;
+  --title-font-size: 1.5rem;
+  --text-font-size: 1.3rem;
+  --mb-font-size: 1.2rem;
 }
 
 body {
@@ -23,9 +28,10 @@ body {
 
 .titles {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
   font-weight: 900;
   color: var(--white);
+  margin-bottom: 2rem;
 }
 
 .text {
@@ -45,7 +51,7 @@ body {
   align-items: center;
   font-size: 1.4rem;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   color: var(--black);
   background: var(--primary-color);
 }
@@ -56,42 +62,9 @@ body {
   border: double;
 }
 
-.btn {
-  padding: 1px;
-  display: flex;
-  position: absolute;
-  top: 60%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    159deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(14, 23, 56, 1) 28%,
-    rgba(9, 86, 122, 1) 67%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9em;
-  color: var(--white);
-}
-
-.btn:hover {
-  border-radius: 5px;
-  cursor: pointer;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    214deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(14, 23, 56, 1) 28%,
-    rgba(9, 86, 122, 1) 67%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  scale: 1.1;
-}
-
 @media (min-width: 540px) {
   .main-button {
-    font-size: 1.2rem;
+    font-size: var(--mb-font-size);
     padding: 10px;
   }
 }

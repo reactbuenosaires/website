@@ -7,11 +7,10 @@
   align-items: center;
   padding-top: 2.5rem;
   box-sizing: border-box;
-  /* padding-bottom: 55px; aplicar para desktop */
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: var(--mb-font-size);
   color: var(--white);
 }
 

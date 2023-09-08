@@ -37,7 +37,7 @@
 .description {
   color: var(--white);
   margin: 2rem;
-  font-size: 1.3rem;
+  font-size: var(--text-font-size);
   text-align: center;
 }
 

@@ -23,7 +23,7 @@ export default function AboutSection(props) {
           hablar de tecnología y desarrollar nuevos projecto.
         </p>
       </section>
-      <section className={style.container} >
+      <section className={style.sentence_container} >
         <p className={style.motivation_container}>¡No hay límites con todo lo que podemos hacer juntos!</p>
       </section>
     </section>
