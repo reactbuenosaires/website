@@ -38,15 +38,14 @@ export default function ReactTeam(props) {
       <div className={style.card_container}>
         {memberTeam.map((member, index) => {
           return (
-            <div key={index}>
-              <TeamCard
-                urlPic={member.urlImage}
-                name={member.name}
-                role={member.role}
-                networkUrl={member.network}
-                alt={member.role}
-              />
-            </div>
+            <TeamCard
+              key={index}
+              urlPic={member.urlImage}
+              name={member.name}
+              role={member.role}
+              networkUrl={member.network}
+              alt={member.role}
+            />
           );
         })}
       </div>

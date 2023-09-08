@@ -1,52 +1,73 @@
 .team_container {
-    padding: 8rem 2.5rem 6rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 8rem 2.5rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card_container {
-    display: flex;
-    border-radius: var(--border-radius);
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
+  display: flex;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .teamMember {
-    display: flex;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 23, 56, 1) 35%, rgba(14, 23, 56, 0.5551470588235294) 100%);
-    width: 100px;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--black);
-    width: 100%;
-    margin: 0.5em;
+  display: flex;
+  width: 250px;
+  background: var(--deep-blue);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--blue);
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .memberData {
-    display: flex;
-    flex-direction: column;
-    color: var(--secondary-white);
-    padding: 01rem 0 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--secondary-white);
+  padding: 0.5rem 1rem;
 }
 
 .memberData h5,
 .memberData p {
-    display: flex;
-    flex-direction: column;
-    margin: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
 }
 
-.borderPic {
-    padding:0.5rem 0.4rem;
-    border-radius: 50%;
-    object-fit: cover;
+.memberData h5 {
+  margin-bottom: 1rem;
 }
 
-@media (min-width:600px) and (max-width:800px){
-    .card_container{
-        display:grid; 
-        justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
-    }
+.social_media_container {
+  display: flex;
+}
+
+.image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 20px;
+  color: var(--white);
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .card_container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
