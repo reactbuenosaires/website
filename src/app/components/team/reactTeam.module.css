@@ -26,7 +26,7 @@
 .memberData {
     display: flex;
     flex-direction: column;
-    color: var(--white);
+    color: var(--secondary-white);
     padding: 01rem 0 2rem;
 }
 

@@ -20,6 +20,7 @@
 }
 
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(14, 23, 56);
@@ -37,7 +38,7 @@ body {
 .text {
   margin-top: 2em;
   font-weight: 500;
-  color: white;
+  color: var(--secondary-white);
   text-align: center;
 }
 
@@ -50,6 +51,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+  letter-spacing: 2px;
   padding: 15px;
   border-radius: var(--border-radius);
   color: var(--black);

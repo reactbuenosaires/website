@@ -29,7 +29,7 @@ const MainFooter = () => {
   return (
     <footer className={style.footer}>
       <section className={style.footer_section}>
-        <p className={style.text}>Siguenos en nuestras redes</p>
+        <p className={style.text}>Puedes encontrarnos en:</p>
         <div className={style.social_media_container}>
           {icons.map((icon, index) => (
             <div key={index}>
@@ -51,34 +51,8 @@ const MainFooter = () => {
         <p className={style.text}>Contactanos</p>
         <a href="mailto:reactjs.ba@gmail.com" className={style.mailto}>reactjs.ba@gmail.com</a>
       </section>
-      {/* <section className={style.social_media_section}>
-        <p className={style.text}>Siguenos en nuestras redes</p>
-        <ul className={style.social_media_container}>
-          {icons.map((icon, index) => (
-            <li key={index}>
-              <a href={icon.link} target="blank">
-                <Image
-                  className={style.icon}
-                  src={icon.src}
-                  alt="text"
-                  width={25}
-                  height={25}
-                  title={icon.name}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section className={style.section}>
-        <p className={style.text}>Contactanos</p>
-        <a href="mailto:reactjs.ba@gmail.com">reactjs.ba@gmail.com</a>
-      </section>
       <section className={style.copyrigth}>
-        <p className={style.text}>Copyright section</p>
-      </section> */}
-      <section className={style.copyrigth}>
-        <p className={style.text}>Copyright section</p>
+        <p className={style.text}>© React Buenos Aires 2023</p>
       </section>
     </footer>
   );
