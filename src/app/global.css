@@ -64,8 +64,8 @@ body {
 
 @media (min-width: 540px) {
   .main-button {
-    font-size: var(--mb-font-size);
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 15px;
   }
 }
 
