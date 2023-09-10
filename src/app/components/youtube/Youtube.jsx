@@ -4,12 +4,14 @@ import Title from "../Title";
 import style from "@/app/components/youtube/youtube.module.css"
 import Image from "next/image";
 
+const apiKey = process.env.API_KEY;
+
+
 async function getYtVideos() {
   const response = await fetch(
-    'https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyA-DdtuRfrnb9pfiMOcQOLdT5mrqaA-UNM&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=4'
-  );
+    `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=3`);
   const data = await response.json();
-  return data.items || [];
+  return data.items || []; // Ensure that it returns an empty array if there are no items.
 }
 
 export default function Youtube(props) {
