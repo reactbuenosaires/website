@@ -5,8 +5,4 @@ const nextConfig = {
   },
 }
 
-module.exports =  {
-  images: {
-    domains: ['i.ytimg.com'], // Add domains for images you want to use
-  }
-}
+module.exports = nextConfig
