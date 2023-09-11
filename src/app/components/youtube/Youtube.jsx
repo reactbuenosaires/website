@@ -3,8 +3,11 @@ import React, { useEffect, useState } from "react";
 import Title from "../Title";
 import style from "@/app/components/youtube/youtube.module.css"
 import Image from "next/image";
+import dotenv from "dotenv";
+dotenv.config(); 
 
-const apiKey = process.env.API_KEY;
+const apiKey=process.env.API_KEY;
+console.log(apiKey)
 
 
 async function getYtVideos() {
@@ -32,7 +35,7 @@ export default function Youtube(props) {
       <Title titleDescription="CHARLAS" />
       <div className={style.container}>
         {videos.map((video, index) => (
-          <a className={style.yt_enlaces} href={'www.google.com'} key={index}>
+          <a className={style.yt_enlaces} href={`https://www.youtube.com/watch?v=${video.id.videoId}`} key={index}>
           <div className={style.youtube_card} >
             <Image className={style.image}
               src={video.snippet.thumbnails.high.url} 

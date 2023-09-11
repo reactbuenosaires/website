@@ -1,5 +1,8 @@
 .container{
+    padding: 10px 40px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .yt_enlaces{
@@ -8,6 +11,8 @@
 
 .youtube_card{
     display:  flex;
+    flex-direction: column;
+    justify-self: center;
 }
 
 .image{
