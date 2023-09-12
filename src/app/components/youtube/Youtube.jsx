@@ -6,18 +6,16 @@ import Image from "next/image";
 import dotenv from "dotenv";
 dotenv.config(); 
 
-const apiKey=process.env.API_KEY;
-console.log(apiKey)
-
+const apiKey=process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 async function getYtVideos() {
   const response = await fetch(
     `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=3`);
   const data = await response.json();
-  return data.items || []; // Ensure that it returns an empty array if there are no items.
+  return data.items || [];
 }
 
-export default function Youtube(props) {
+export default function Youtube() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
