@@ -9,8 +9,7 @@ dotenv.config();
 const apiKey=process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 async function getYtVideos() {
-  const response = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=3`);
+  const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=3`);
   const data = await response.json();
   return data.items || [];
 }
