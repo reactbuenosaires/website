@@ -7,7 +7,7 @@ dotenv.config();
 const apiKey=process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 export default async function Youtube() {
-  const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=3` );
+  const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=4` );
   const json_Data = await res.json();
   const videos  = json_Data.items
   console.log(videos.snippe)

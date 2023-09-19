@@ -1,6 +1,7 @@
 .youtube_section{
     margin-top: 5rem;
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@
 .youtube_card{
     position: relative;
     align-items: center;
-    border: solid 0.9px white;
+    border: solid 0.9px var(--blue);
     border-radius: 10px;
     padding: 10px;
 }
@@ -33,6 +34,11 @@
 .titulo{
     color: white;
     text-align: center;
+    font-size: 0.9rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
 
 @media (min-width: 400px) and (max-width: 786px) {
@@ -51,7 +57,8 @@
         margin-top: 2rem;
     }
     .titulo{
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
 
