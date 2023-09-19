@@ -13,7 +13,7 @@ export default async function Youtube() {
   console.log(videos.snippe)
 
   return (
-    <div>
+    <div className={style.youtube_section}>
       <Title titleDescription="CHARLAS" />
       <div className={style.container}>
         {videos.map((video, index) => (

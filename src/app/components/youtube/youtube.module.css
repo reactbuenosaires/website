@@ -1,3 +1,6 @@
+.youtube_section{
+    margin-top: 5rem;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -6,7 +9,7 @@
     max-width: 1100px;
     cursor: pointer;
     margin: 0 auto;
-    padding: 2.5rem 2.5rem 0;
+    padding: 1rem 2.5rem 0;
 }
 
 .yt_enlaces{
