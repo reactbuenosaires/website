@@ -14,7 +14,10 @@ export default async function Youtube() {
 
   return (
     <div className={style.youtube_section}>
-      <Title titleDescription="CHARLAS" />
+      <Title titleDescription="MEETUPS REALIZADAS" />
+      <h3 className={style.subtitle}>
+          ¡Descrubí todo el contenido de meetups pasadas en Youtube!
+        </h3>
       <div className={style.container}>
         {videos.map((video, index) => (
           <a className={style.yt_enlaces} href={`https://www.youtube.com/watch?v=${video.id.videoId}`} key={index}>

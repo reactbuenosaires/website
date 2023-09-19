@@ -1,5 +1,7 @@
 .youtube_section{
-    margin-top: 5rem;
+    padding-top: 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container{
@@ -23,6 +25,7 @@
     border: solid 0.9px var(--blue);
     border-radius: 10px;
     padding: 10px;
+    max-height: 300px;
 }
 
 .image{
@@ -39,6 +42,15 @@
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
+}
+
+.subtitle{
+    text-align: center;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: var(--text-font-size);
+    margin: 2rem 0;
+    color: var(--sky-blue);
 }
 
 @media (min-width: 400px) and (max-width: 786px) {
@@ -71,6 +83,5 @@
         gap: 10px;
         width: 80vw;
     }
-
 }
 
