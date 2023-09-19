@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    max-width: 1100px;
+    min-width: 40vw;
     cursor: pointer;
     margin: 0 auto;
     padding: 1rem 2.5rem 0;
@@ -43,15 +43,17 @@
 
 @media (min-width: 400px) and (max-width: 786px) {
     .youtube_card{
-        max-width: 60vw;
+        width: 50vw;
+        max-height: 60vh;
     }
 }
 
 @media (min-width: 786px)  {
     .container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        width: 70vw;
     }
     .youtube_card{
         margin-top: 2rem;
@@ -60,5 +62,15 @@
         font-size: 1rem;
         font-weight: 300;
     }
+}
+
+@media (min-width: 1000px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 80vw;
+    }
+
 }
 
