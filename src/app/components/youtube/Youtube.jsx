@@ -9,8 +9,8 @@ const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 function getLiveBroadcasts(data) {
   return data.filter(item => {
     const liveBroadcastContent = item.snippet.liveBroadcastContent;
-    return liveBroadcastContent === "none" ;
-  });
+    return liveBroadcastContent === "none";
+  }).slice(0, 4);
 }
 
 export default async function Youtube() {
@@ -19,7 +19,7 @@ export default async function Youtube() {
   );
   const json_Data = await res.json();
   const data = json_Data.items;
-  const videos =  getLiveBroadcasts(data)
+  const videos =  getLiveBroadcasts(data);
 
   return (
     <div className={style.youtube_section}>
