@@ -1,0 +1,29 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 4rem;
+    right: 10px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: white;
+    border: solid 0.5px var(--blue);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+    transform-origin: bottom;
+    cursor: pointer;
+}
+
+@keyframes bounce-3 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+
+

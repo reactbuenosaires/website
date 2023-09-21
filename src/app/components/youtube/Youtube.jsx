@@ -2,24 +2,15 @@ import Title from "../Title";
 import style from "@/app/components/youtube/youtube.module.css";
 import Image from "next/image";
 import dotenv from "dotenv";
+import { getListVideoYoutube,fetchYoutubeData  } from '@/app/components/youtube/fetchYoutubeData';
 dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
-function getLiveBroadcasts(data) {
-  return data.filter(item => {
-    const liveBroadcastContent = item.snippet.liveBroadcastContent;
-    return liveBroadcastContent === "none";
-  }).slice(0, 4);
-}
-
 export default async function Youtube() {
-  const res = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=5`
-  );
-  const json_Data = await res.json();
-  const data = json_Data.items;
-  const videos =  getLiveBroadcasts(data);
+  const data = await fetchYoutubeData(apiKey)
+  let videoStatus = 'none'
+  const videos =  getListVideoYoutube(data,videoStatus);
 
   return (
     <div className={style.youtube_section}>

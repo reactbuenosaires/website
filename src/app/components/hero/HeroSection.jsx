@@ -2,6 +2,7 @@ import style from "@/app/components/hero/heroSection.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button";
+import Modal from '@/app/components/modal/Modal'
 
 export default function HeroSection() {
   return (
@@ -36,6 +37,7 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
+      <Modal/>
     </section>
   );
 }
