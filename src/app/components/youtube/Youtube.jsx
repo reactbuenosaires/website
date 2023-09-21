@@ -15,7 +15,7 @@ function getLiveBroadcasts(data) {
 
 export default async function Youtube() {
   const res = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=4`
+    `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=5`
   );
   const json_Data = await res.json();
   const data = json_Data.items;
