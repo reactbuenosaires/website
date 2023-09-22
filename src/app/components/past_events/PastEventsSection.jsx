@@ -1,6 +1,6 @@
 import Title from "../Title";
+import CardPastEvent from "@/app/components/past_events/CardPastEvent";
 import style from "@/app/components/past_events/PastEventsSection.module.css";
-import Image from "next/image";
 import dotenv from "dotenv";
 import {
   getListVideoYoutube,
@@ -10,7 +10,7 @@ dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
-export default async function Youtube() {
+export default async function PastEvents() {
   const data = await fetchYoutubeData(apiKey);
   let videoStatus = "none";
   const videos = getListVideoYoutube(data, videoStatus);
@@ -25,25 +25,12 @@ export default async function Youtube() {
       </div>
       <section className={style.videos_container}>
         {videos.map((video, index) => (
-          <div className={style.youtube_card}>
-            <a
-              key={index}
-              target="_blank"
-              className={style.links}
-              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-            >
-              <div className={style.image_container}>
-                <Image
-                  className={style.image}
-                  src={video.snippet.thumbnails.high.url}
-                  alt="Video de Youtube"
-                  width={video.snippet.thumbnails.high.width}
-                  height={video.snippet.thumbnails.high.height}
-                />
-              </div>
-              <h4 className={style.video_title}>{video.snippet.title}</h4>
-            </a>
-          </div>
+          <CardPastEvent
+            key={index}
+            videoId={video.id.videoId}
+            thumbnailUrl={video.snippet.thumbnails.high.url}
+            title={video.snippet.title}
+          />
         ))}
       </section>
     </section>
