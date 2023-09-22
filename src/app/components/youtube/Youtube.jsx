@@ -1,6 +1,7 @@
 import Title from "../Title";
 import style from "@/app/components/youtube/youtube.module.css";
 import Image from "next/image";
+import Modal from '@/app/components/modal/Modal'
 import dotenv from "dotenv";
 import { getListVideoYoutube,fetchYoutubeData  } from '@/app/components/youtube/fetchYoutubeData';
 dotenv.config();
@@ -38,6 +39,7 @@ export default async function Youtube() {
           </a>
         ))}
       </div>
+      <Modal/>
     </div>
   );
 }
