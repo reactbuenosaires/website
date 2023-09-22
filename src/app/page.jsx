@@ -4,7 +4,7 @@ import About from "./components/about/AboutSection";
 import StatisticsSection from "./components/statistics/StatisticsSection";
 import ProposalSponsor from "@/app/components/proposal_sponsor/ProposalSponsor";
 import ReactTeam from "./components/team/RactTeam";
-import Youtube from "@/app/components/youtube/Youtube"
+import Youtube from "@/app/components/past_events/PastEventsSection"
 
 const open = Open_Sans({ subsets: ["latin"] });
 
