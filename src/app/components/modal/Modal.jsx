@@ -4,7 +4,7 @@ import { faXmark } from "@fortawesome/free-brands-svg-icons";
 import {
   getListVideoYoutube,
   fetchYoutubeData,
-} from "@/app/components/youtube/fetchYoutubeData";
+} from "@/app/components/past_events/fetchYoutubeData";
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
