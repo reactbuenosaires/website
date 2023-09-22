@@ -3,7 +3,7 @@ import style from "@/app/components/youtube/youtube.module.css";
 import Image from "next/image";
 import Modal from '@/app/components/modal/Modal'
 import dotenv from "dotenv";
-import { getListVideoYoutube,fetchYoutubeData  } from '@/app/components/youtube/fetchYoutubeData';
+import { getListVideoYoutube,fetchYoutubeData, isUpcomingVideo  } from '@/app/components/youtube/fetchYoutubeData';
 dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
@@ -12,6 +12,8 @@ export default async function Youtube() {
   const data = await fetchYoutubeData(apiKey)
   let videoStatus = 'none'
   const videos =  getListVideoYoutube(data,videoStatus);
+  const displayModal = await isUpcomingVideo(data);
+  console.log(displayModal)
 
   return (
     <div className={style.youtube_section}>
@@ -39,7 +41,7 @@ export default async function Youtube() {
           </a>
         ))}
       </div>
-      <Modal/>
+      {displayModal && <Modal/>}
     </div>
   );
 }

@@ -10,8 +10,6 @@ export default async function Modal() {
   const data = await fetchYoutubeData(apiKey);
   let videoStatus = "upcoming";
   const videos = getListVideoYoutube(data, videoStatus);
-  console.log(videos);
-
   return (
     <div className={style.modal}>
       <p>¡Próxima MeetUp!🚀</p>

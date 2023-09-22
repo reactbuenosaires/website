@@ -12,3 +12,11 @@ export async function fetchYoutubeData(apiKey) {
       return liveBroadcastContent === status;
     }).slice(0, 4);
   }
+
+  export function isUpcomingVideo(data) {
+    if(data[0].snippet.liveBroadcastContent=== 'upcoming'){
+      return true
+    } else false
+  }
+
+
