@@ -5,6 +5,7 @@ import {
   faYoutube,
   faXTwitter,
   faInstagram,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
 const socialMedia = [
@@ -24,6 +25,11 @@ const socialMedia = [
     icon: faInstagram,
     link: "https://www.instagram.com/reactbuenosaires",
   },
+  {
+    name: "linkedin",
+    icon: faLinkedinIn,
+    link: "https://linkedin.com/company/react-buenos-aires",
+  }
 ];
 
 export default function SocialMediaBanner() {

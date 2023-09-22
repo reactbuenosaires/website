@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <About />
       <StatisticsSection />
-      <Youtube/>
+      {/* <Youtube/> */}
       <ProposalSponsor />
       <ReactTeam />
     </main>

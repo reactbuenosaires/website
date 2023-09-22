@@ -12,6 +12,7 @@ export default async function Modal() {
   const videos = getListVideoYoutube(data, videoStatus);
   return (
     <div className={style.modal}>
+      
       <p>¡Próxima MeetUp!🚀</p>
       {videos.map((video, index) => (
         <div key={index}>
