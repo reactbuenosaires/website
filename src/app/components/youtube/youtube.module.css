@@ -29,6 +29,11 @@
     max-height: 300px;
 }
 
+.youtube_card:hover{
+    background-color: #6ed8ff23;
+    transform: scale(1.05);
+}
+
 .image{
     border-radius: 10px;
     width: 100%;
