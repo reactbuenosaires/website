@@ -3,44 +3,17 @@ import style from "@/app/components/youtube/youtube.module.css";
 import Image from "next/image";
 import Modal from '@/app/components/modal/Modal'
 import dotenv from "dotenv";
-import { getListVideoYoutube,fetchYoutubeData, isUpcomingVideo  } from '@/app/components/youtube/fetchYoutubeData';
+import { getListVideoYoutube,fetchYoutubeData, isUpcomingVideo  } from '@/app/components/past_events/fetchYoutubeData';
 dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 export default async function Youtube() {
   const data = await fetchYoutubeData(apiKey)
-  let videoStatus = 'none'
-  const videos =  getListVideoYoutube(data,videoStatus);
   const displayModal = await isUpcomingVideo(data);
   console.log(displayModal)
-
   return (
-    <div className={style.youtube_section}>
-      <Title titleDescription="MEETUPS REALIZADAS" />
-      <h3 className={style.subtitle}>
-        ¡Descrubí todo el contenido de meetups pasadas en Youtube!
-      </h3>
-      <div className={style.container}>
-        {videos.map((video, index) => (
-          <a
-            className={style.yt_enlaces}
-            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-            key={index}
-          >
-            <div className={style.youtube_card}>
-              <Image
-                className={style.image}
-                src={video.snippet.thumbnails.high.url}
-                alt="Video de Youtube"
-                width={video.snippet.thumbnails.high.width}
-                height={video.snippet.thumbnails.high.height}
-              />
-              <p className={style.titulo}>{video.snippet.title}</p>
-            </div>
-          </a>
-        ))}
-      </div>
+    <div>
       {displayModal && <Modal/>}
     </div>
   );
