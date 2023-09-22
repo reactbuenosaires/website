@@ -1,4 +1,6 @@
 import style from "./modal.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-brands-svg-icons";
 import {
   getListVideoYoutube,
   fetchYoutubeData,
@@ -12,11 +14,16 @@ export default async function Modal() {
   const videos = getListVideoYoutube(data, videoStatus);
   return (
     <div className={style.modal}>
-      
-      <p>¡Próxima MeetUp!🚀</p>
+      <p className={style.title}>¡Próxima Meetup!🚀</p>
       {videos.map((video, index) => (
         <div key={index}>
-          <a href={`https://www.youtube.com/watch?v=${video.id.videoId}`} target="_blank">{video.snippet.title}</a>
+             <FontAwesomeIcon icon={faXmark} />
+          <a className={style.link}
+            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+            target="_blank"
+          >
+            {video.snippet.title}
+          </a>
         </div>
       ))}
     </div>

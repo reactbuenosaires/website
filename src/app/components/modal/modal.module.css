@@ -3,19 +3,32 @@
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     bottom: 4rem;
-    right: 10px;
+    right: 20px;
     border-radius: 5px;
     padding: 0.5rem;
-    background: white;
+    background: rgba(0, 0, 0, 0.526);
     border: solid 0.5px var(--blue);
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-name: bounce-3;
     animation-timing-function: ease;
     transform-origin: bottom;
+    max-width: 60vw;
+}
+.title{
+    color:white;
+    margin-top: 2px;
+}
+.link{
+    color: var(--primary-color);
+    text-decoration: none;
     cursor: pointer;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
 }
 
 @keyframes bounce-3 {
@@ -25,6 +38,21 @@
     100% { transform: translateY(0);
              }
 }
+
+@media (min-width: 600px) {
+    .modal{
+        max-width: 40vw;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .modal{
+        bottom: 5px;
+    }
+  }
+
+  
 
 
 
