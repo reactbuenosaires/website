@@ -5,7 +5,7 @@ import StatisticsSection from "./components/statistics/StatisticsSection";
 import ProposalSponsor from "@/app/components/proposal_sponsor/ProposalSponsor";
 import ReactTeam from "./components/team/RactTeam";
 import PastEvents from "@/app/components/past_events/PastEventsSection"
-import Youtube from "@/app/components/youtube/Youtube"
+import NextMeetupModal from "@/app/components/next_meetup_modal/DisplayModal"
 
 const open = Open_Sans({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <StatisticsSection />
       <PastEvents/>
-      <Youtube/>
+      <NextMeetupModal/>
       <ProposalSponsor />
       <ReactTeam />
     </main>

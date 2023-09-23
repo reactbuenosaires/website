@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 11;
     bottom: 4rem;
-    right: 20px;
+    right: 10px;
     border-radius: 5px;
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.526);
@@ -17,10 +17,12 @@
     transform-origin: bottom;
     max-width: 600px;
 }
+
 .title{
     color:white;
     margin-top: 2px;
 }
+
 .link{
     color: var(--primary-color);
     text-decoration: none;
@@ -41,6 +43,8 @@
 @media (max-width: 400px) {
     .modal{
         right: 1px;
+        margin: 0 0.5rem;
+
     }
 }
 
