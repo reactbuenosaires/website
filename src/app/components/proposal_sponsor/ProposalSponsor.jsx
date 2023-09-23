@@ -23,8 +23,8 @@ export default function CallToAction(props) {
   return (
     <section className={style.proposal_container}>
       <Title titleDescription="IMPULSA LA COMUNIDAD" />
-      <section className={style.text_tontainer}>
-        <p className={style.text_Description}>
+      <section className={style.text_container}>
+        <p className={style.text_description}>
           ¡REACT BA somos todos y todos podemos participar!
         </p>
       </section>

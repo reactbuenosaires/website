@@ -4,12 +4,12 @@
   margin: 0 auto;
 }
 
-.text_tontainer {
+.text_container {
   padding: 0 2.5rem;
   margin: 2.5rem 0;
 }
 
-.text_Description {
+.text_description {
   color: var(--secondary-white);
   text-align: center;
   font-size: var(--mb-font-size);

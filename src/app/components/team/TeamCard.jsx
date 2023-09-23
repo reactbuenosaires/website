@@ -5,7 +5,7 @@ import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function TeamCard(props) {
   return (
-    <div className={style.teamMember}>
+    <div className={style.team_members}>
       <Image
         className={style.image}
         src={props.urlPic}
@@ -13,7 +13,7 @@ export default function TeamCard(props) {
         alt="text"
         height={80}
       />
-      <div className={style.memberData}>
+      <div className={style.member_data}>
         <h5>{props.name}</h5>
         <div className={style.social_media_container}>
           <FontAwesomeIcon icon={faXTwitter} className={style.icon} />
