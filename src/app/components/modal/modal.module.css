@@ -15,7 +15,7 @@
     animation-name: bounce-3;
     animation-timing-function: ease;
     transform-origin: bottom;
-    max-width: 60vw;
+    max-width: 600px;
 }
 .title{
     color:white;
@@ -35,15 +35,19 @@
     0%   { transform: translateY(0);}
     30%  { transform: translateY(-10px); }
     50%  { transform: translateY(0); }
-    100% { transform: translateY(0);
-             }
+    100% { transform: translateY(0);}
+}
+
+@media (max-width: 400px) {
+    .modal{
+        right: 1px;
+    }
 }
 
 @media (min-width: 600px) {
     .modal{
-        max-width: 40vw;
+        max-width: 400px;
     }
-
 }
 
 @media (max-width: 767px) {
