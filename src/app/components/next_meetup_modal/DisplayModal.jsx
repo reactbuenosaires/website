@@ -8,7 +8,6 @@ const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 export default async function Youtube() {
   const data = await fetchYoutubeData(apiKey)
   const displayModal = await isUpcomingVideo(data);
-  console.log(displayModal)
   return (
     <div>
       {displayModal && <Modal/>}

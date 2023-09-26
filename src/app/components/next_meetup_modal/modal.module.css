@@ -20,8 +20,21 @@
 }
 
 .title{
+    display: flex;
+    flex-direction: row;
     color:white;
     margin-top: 2px;
+}
+
+.social_media_icon{
+    width: 25px;
+    height: 25px;
+    color: var(--secondary-white);
+    cursor: pointer;
+}
+
+.social_media_icon:hover{
+    color:#ff1154;
 }
 
 .link{
@@ -45,7 +58,7 @@
     .modal{
         right: 1px;
         margin: 0 0.5rem;
-
+        max-width: 200px;
     }
 }
 

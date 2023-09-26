@@ -1,6 +1,6 @@
 import style from "./modal.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-brands-svg-icons";
+import { faMeetup } from "@fortawesome/free-brands-svg-icons";
 import {
   getListVideoYoutube,
   fetchYoutubeData,
@@ -14,11 +14,22 @@ export default async function Modal() {
   const videos = getListVideoYoutube(data, videoStatus);
   return (
     <div className={style.modal}>
-      <p className={style.title}>¡Próxima Meetup!🚀</p>
+      <p className={style.title}>
+        <a
+          href="https://www.meetup.com/es/react-en-buenos-aires/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faMeetup}
+            className={style.social_media_icon}
+          />
+        </a>
+        ¡Próxima Meetup!
+      </p>
       {videos.map((video, index) => (
         <div key={index}>
-             <FontAwesomeIcon icon={faXmark} />
-          <a className={style.link}
+          <a
+            className={style.link}
             href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
             target="_blank"
           >
