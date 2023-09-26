@@ -16,6 +16,7 @@
     animation-timing-function: ease;
     transform-origin: bottom;
     max-width: 600px;
+    backdrop-filter: blur(10px);
 }
 
 .title{
