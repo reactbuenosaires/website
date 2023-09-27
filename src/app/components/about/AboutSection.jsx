@@ -1,17 +1,7 @@
 import Image from "next/image";
 import style from "@/app/components/about/about.module.css";
 import Title from "@/app/components/Title";
-import speaker from "@/app/assets/images/speaker.jpg";
-import stage from "@/app/assets/images/conferenceRoom.jpg";
-import people from "@/app/assets/images/people.jpg";
-import code from "@/app/assets/images/code.jpg";
-
-const images = [
-  { description: "Speaker", img: speaker },
-  { description: "Conference stage", img: stage },
-  { description: "People in Meetup", img: people },
-  { description: "Code Screen", img: code },
-];
+import { aboutUsImages } from "@/app/data/Images";
 
 export default function AboutSection() {
   return (
@@ -28,7 +18,7 @@ export default function AboutSection() {
         </h3>
       </section>
       <section className={style.container_Images}>
-        {images.map((image, index) => (
+        {aboutUsImages.map((image, index) => (
           <div className={style.card} key={index}>
             <Image
               className={style.image}

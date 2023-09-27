@@ -1,38 +1,8 @@
 import React from "react";
 import style from "./MainFooter.module.css";
+import socialMedia from "@/app/data/SocialMedia";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMeetup,
-  faYoutube,
-  faXTwitter,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-const socialMedia = [
-  {
-    name: "meetup",
-    icon: faMeetup,
-    link: "https://www.meetup.com/es/react-en-buenos-aires",
-  },
-  {
-    name: "youtube",
-    icon: faYoutube,
-    link: "https://www.youtube.com/@ReactJSBuenosAires",
-  },
-  { name: "twitter", icon: faXTwitter, link: "https://twitter.com/React_BA" },
-  {
-    name: "instagram",
-    icon: faInstagram,
-    link: "https://www.instagram.com/reactbuenosaires",
-  },
-  {
-    name: "linkedin",
-    icon: faLinkedinIn,
-    link: "https://linkedin.com/company/react-buenos-aires",
-  }
-];
 
 const MainFooter = () => {
   return (
@@ -40,10 +10,13 @@ const MainFooter = () => {
       <section className={style.footer_section}>
         <p className={style.text}>Puedes encontrarnos en:</p>
         <div className={style.social_media_container}>
-          {socialMedia.map((network, index) => (
-            <div key={index}>
-              <a href={network.link} target="blank">
-                <FontAwesomeIcon icon={network.icon} className={style.social_media_icon} />
+          {socialMedia.map((network) => (
+            <div key={network.title}>
+              <a href={network.url} target="_blank">
+                <FontAwesomeIcon
+                  icon={network.icon}
+                  className={style.social_media_icon}
+                />
               </a>
             </div>
           ))}
@@ -52,7 +25,7 @@ const MainFooter = () => {
       <section className={style.footer_text}>
         <p className={style.text}>Contactanos</p>
         <a href="mailto:reactjs.ba@gmail.com" className={style.mailto}>
-          <FontAwesomeIcon icon={faEnvelope} className={style.icon}/>
+          <FontAwesomeIcon icon={faEnvelope} className={style.icon} />
           reactjs.ba@gmail.com
         </a>
       </section>
