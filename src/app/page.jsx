@@ -5,7 +5,7 @@ import StatisticsSection from "./components/statistics/StatisticsSection";
 import ProposalSponsor from "@/app/components/proposal_sponsor/ProposalSponsor";
 import ReactTeam from "./components/team/RactTeam";
 import PastEvents from "@/app/components/past_events/PastEventsSection"
-import NextMeetupModal from "@/app/components/next_meetup_modal/DisplayModal"
+import NextMeetupModal from "@/app/components/next_meetup_modal/Modal"
 
 const open = Open_Sans({ subsets: ["latin"] });
 

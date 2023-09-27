@@ -1,5 +1,3 @@
-import style from "./modal.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMeetup } from "@fortawesome/free-brands-svg-icons";
 import CardRender from "./CardRender";
 import {
