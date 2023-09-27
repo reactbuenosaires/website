@@ -23,8 +23,11 @@ export function liveContentStatus(data) {
   }
 }
 
-export function liveContent(data) {
-  return data[0];
+export function liveContent(data, status) {
+  return data.filter(item => {
+    const liveBroadcastContent = item.snippet.liveBroadcastContent;
+    return liveBroadcastContent === status;
+  })
 }
 
 
