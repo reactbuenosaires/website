@@ -13,8 +13,6 @@ export async function fetchYoutubeData(apiKey) {
     }).slice(0, 4);
   }
 
-  
-
   export function liveContentStatus(data) {
     if(data[0].snippet.liveBroadcastContent==='upcoming'){
       return 'upcoming'
@@ -25,7 +23,6 @@ export async function fetchYoutubeData(apiKey) {
     }
   }
 
-  
   export function liveContent(data) {
     return data[0];
   }
