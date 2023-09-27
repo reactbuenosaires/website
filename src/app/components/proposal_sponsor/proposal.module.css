@@ -9,6 +9,15 @@
   margin: 2.5rem 0;
 }
 
+.subtitle {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 100;
+  font-size: var(--text-font-size);
+  margin: 2rem 0;
+  color: var(--sky-blue);
+}
+
 .text_description {
   color: var(--secondary-white);
   text-align: center;

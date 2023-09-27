@@ -1,17 +1,7 @@
 import Image from "next/image";
 import style from "@/app/components/about/about.module.css";
 import Title from "@/app/components/Title";
-import speaker from "@/app/assets/images/speaker.jpg";
-import stage from "@/app/assets/images/conferenceRoom.jpg";
-import people from "@/app/assets/images/people.jpg";
-import code from "@/app/assets/images/code.jpg";
-
-const images = [
-  { description: "Speaker", img: speaker },
-  { description: "Conference stage", img: stage },
-  { description: "People in Meetup", img: people },
-  { description: "Code Screen", img: code },
-];
+import { aboutUsImages } from "@/app/data/Images";
 
 export default function AboutSection() {
   return (
@@ -19,16 +9,16 @@ export default function AboutSection() {
       <Title titleDescription="¿QUIÉNES SOMOS?" />
       <section className={style.section_container}>
         <p className={style.text_description}>
-          Somos una comunidad para compartir conocimientos de los últimos
-          avances de React Js y cualquier derivado de React Native, Redux,
-          React-bootstrap, Material U-I y más.
+          Somos una comunidad creada para explorar y compartir los últimos
+          avances en React JS y sus derivados, incluyendo React Native, Redux,
+          React-Bootstrap, Material UI y mucho más!
         </p>
         <h3 className={style.subtitle}>
           Aprendemos, conectamos, crecemos e iteramos
         </h3>
       </section>
       <section className={style.container_Images}>
-        {images.map((image, index) => (
+        {aboutUsImages.map((image, index) => (
           <div className={style.card} key={index}>
             <Image
               className={style.image}
@@ -40,8 +30,9 @@ export default function AboutSection() {
       </section>
       <section className={style.text_container}>
         <p className={style.text_description}>
-          Las meetups son el espacio perfecto para compartir conocimiento,
-          hablar de tecnología y desarrollar nuevos projecto.
+          Las meetups son el lugar ideal para compartir conocimiento, hablar de
+          tecnología y desarrollar nuevos proyectos. ¡Únete a formar parte de
+          esta comunidad de mentes creativas y entusiastas de la tecnología!
         </p>
       </section>
       <section className={style.sentence_container}>

@@ -20,7 +20,8 @@ export default async function PastEvents() {
       <Title titleDescription="MEETUPS REALIZADAS" />
       <div className={style.subtitle_container}>
         <h3 className={style.subtitle}>
-          ¡Descrubí todo el contenido de meetups pasadas en Youtube!
+          ¡Reviví todo el contenido de meetups pasadas en nuestro canal de
+          Youtube!
         </h3>
       </div>
       <section className={style.videos_container}>
