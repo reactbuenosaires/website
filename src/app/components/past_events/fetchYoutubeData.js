@@ -13,10 +13,22 @@ export async function fetchYoutubeData(apiKey) {
     }).slice(0, 4);
   }
 
-  export function isUpcomingVideo(data) {
-    if(data[0].snippet.liveBroadcastContent=== 'upcoming'){
-      return true
-    } else false
+  
+
+  export function liveContentStatus(data) {
+    if(data[0].snippet.liveBroadcastContent==='upcoming'){
+      return 'upcoming'
+    } else if(data[0].snippet.liveBroadcastContent=== 'live'){
+      return 'live'
+    } else if (data[0].snippet.liveBroadcastContent=== 'none'){
+      return 'none'
+    }
   }
+
+  
+  export function liveContent(data) {
+    return data[0];
+  }
+
 
 
