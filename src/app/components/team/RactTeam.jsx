@@ -1,37 +1,39 @@
 import TeamCard from "@/app/components/team/TeamCard";
-import picMember from "@/app/assets/people.jpg";
+import facuProfileImg from "@/app/assets/team/Facu_facundozurdo.jpg";
+import nanoProfileImg from "@/app/assets/team/Nano_nanovazquez__.jpg";
+import nickyProfileImg from "@/app/assets/team/Nicky_naniitevez.png";
+import mateProfileImg from "@/app/assets/team/Mateo_mateosilguero1.jpg";
 import style from "@/app/components/team/reactTeam.module.css";
 import Title from "@/app/components/Title";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const memberTeam = [
   {
-    name: "Person1",
-    role: "Role1",
-    urlImage: picMember,
-    network: faXTwitter,
+    name: "Facundo Giuliani",
+    username: "facundozurdo",
+    image: facuProfileImg,
+    networkUrl: "https://twitter.com/facundozurdo",
   },
   {
-    name: "Person2",
-    role: "Role2",
-    urlImage: picMember,
-    network: faXTwitter,
+    name: "Mariano Vazquez",
+    username: "nanovazquez__",
+    image: nanoProfileImg,
+    networkUrl: "https://twitter.com/nanovazquez__",
   },
   {
-    name: "Person3",
-    role: "Role3",
-    urlImage: picMember,
-    network: faXTwitter,
+    name: "Nicole Tevez",
+    username: "naniitevez",
+    image: nickyProfileImg,
+    networkUrl: "https://twitter.com/naniitevez",
   },
   {
-    name: "Person4",
-    role: "Role4",
-    urlImage: picMember,
-    network: faXTwitter,
+    name: "Mateo Silguero",
+    username: "mateosilguero1",
+    image: mateProfileImg,
+    networkUrl: "https://twitter.com/mateosilguero1",
   },
 ];
 
-export default function ReactTeam(props) {
+export default function ReactTeam() {
   return (
     <div className={style.team_container}>
       <Title titleDescription={"ORGANIZADORES"} />
@@ -40,11 +42,10 @@ export default function ReactTeam(props) {
           return (
             <TeamCard
               key={index}
-              urlPic={member.urlImage}
               name={member.name}
-              role={member.role}
-              networkUrl={member.network}
-              alt={member.role}
+              username={member.username}
+              image={member.image}
+              networkUrl={member.networkUrl}
             />
           );
         })}

@@ -19,6 +19,7 @@
 
 .team_members {
   display: flex;
+  align-items: center;
   width: 250px;
   background: var(--deep-blue);
   border-radius: var(--border-radius);
@@ -36,14 +37,14 @@
   padding: 0.5rem 1rem;
 }
 
-.memberData h5,
-.memberData p {
+.member_data h5,
+.member_data p {
   display: flex;
   flex-direction: column;
   margin: 1px;
 }
 
-.memberData h5 {
+.member_data h5 {
   margin-bottom: 1rem;
 }
 
@@ -61,7 +62,16 @@
 .icon {
   width: 20px;
   color: var(--white);
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--sky-blue);
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
