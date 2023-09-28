@@ -1,5 +1,4 @@
-import style from "./NotificactionBar";
-
+import style from "./notification.module.css";
 export default function RenderNotificacion({ videoStatus, video }) {
   return (
     <div className={style.notification_bar}>
