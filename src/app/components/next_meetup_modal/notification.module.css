@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     position: fixed;
+    margin: 0 0.5rem;
     z-index: 11;
-    bottom: 4rem;
-    right: 10px;
+    bottom: 1rem;
     border-radius: 5px;
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.526);
@@ -15,7 +15,6 @@
     animation-name: bounce-3;
     animation-timing-function: ease;
     transform-origin: bottom;
-    max-width: 600px;
     backdrop-filter: blur(10px);
 }
 
@@ -24,13 +23,6 @@
     flex-direction: row;
     color:white;
     margin-top: 2px;
-}
-
-.social_media_icon{
-    width: 25px;
-    height: 25px;
-    color: var(--secondary-white);
-    cursor: pointer;
 }
 
 .social_media_icon:hover{
@@ -47,30 +39,24 @@
    -webkit-box-orient: vertical;
 }
 
-@keyframes bounce-3 {
+/* @keyframes bounce-3 {
     0%   { transform: translateY(0);}
     30%  { transform: translateY(-10px); }
     50%  { transform: translateY(0); }
     100% { transform: translateY(0);}
-}
+} */
 
-@media (max-width: 400px) {
+@media (min-width: 767px) {
     .modal{
-        right: 1px;
-        margin: 0 0.5rem;
-        max-width: 200px;
+        top: 5px;
+        width: 99%;
+        bottom: none;
+        height: max-content;
     }
-}
 
-@media (min-width: 600px) {
-    .modal{
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 767px) {
-    .modal{
-        bottom: 5px;
+    .card{
+        display: flex;
+        flex-direction: column;
     }
   }
 

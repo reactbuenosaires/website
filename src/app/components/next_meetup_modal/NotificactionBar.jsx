@@ -1,5 +1,5 @@
 import { faMeetup } from "@fortawesome/free-brands-svg-icons";
-import CardRender from "./CardRender";
+import RenderNotificacion from "./RenderNotificacion";
 import {
   liveContentStatus,
   fetchYoutubeData,
@@ -9,14 +9,14 @@ import { Fragment } from "react";
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
-export default async function Modal() {
+export default async function NotificactionBar() {
   const data = await fetchYoutubeData(apiKey);
   const videoStatus = await liveContentStatus(data);
   let video = await liveContent(data, videoStatus);
   return (
     <Fragment>
-      {videoStatus != "none" && (
-        <CardRender videoStatus={videoStatus} video={video} />
+      {videoStatus == "none" && (
+        <RenderNotificacion videoStatus={videoStatus} video={video} />
       )}
     </Fragment>
   );
