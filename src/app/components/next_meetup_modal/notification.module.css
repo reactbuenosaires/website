@@ -1,4 +1,4 @@
-.notification{
+.notification {
     display: flex;
     position: fixed;
     margin: 0 0.5rem;
@@ -15,7 +15,8 @@
     transform-origin: bottom; */
     backdrop-filter: blur(10px);
 }
-.close_text{
+
+.close_text {
     margin: 1px;
     padding: 1px;
     color: var(--blue);
@@ -24,25 +25,25 @@
     cursor: pointer;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: row;
-    color:white;
+    color: white;
     margin-top: 2px;
 }
 
-.social_media_icon:hover{
-    color:#ff1154;
+.social_media_icon:hover {
+    color: #ff1154;
 }
 
-.link{
+.link {
     color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 1;
-   -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
 }
 
 /* @keyframes bounce-3 {
@@ -53,20 +54,15 @@
 } */
 
 @media (min-width: 767px) {
-    .notification{
+    .notification {
         top: 5px;
         width: 99%;
         bottom: none;
         height: max-content;
     }
 
-    .card{
+    .card {
         display: flex;
         flex-direction: column;
     }
-  }
-
-  
-
-
-
+}

@@ -16,7 +16,10 @@ export default async function DataRendered() {
   return (
     <Fragment>
       {videoStatus == "none" && (
-        <RenderNotificacion videoStatus={videoStatus} video={video} />
+        <RenderNotificacion 
+          videoStatus={videoStatus} 
+          video={video} 
+        />
       )}
     </Fragment>
   );
