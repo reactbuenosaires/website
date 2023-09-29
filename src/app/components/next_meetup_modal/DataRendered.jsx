@@ -9,7 +9,7 @@ import { Fragment } from "react";
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
-export default async function NotificactionBar() {
+export default async function DataRendered() {
   const data = await fetchYoutubeData(apiKey);
   const videoStatus = await liveContentStatus(data);
   let video = await liveContent(data, videoStatus);

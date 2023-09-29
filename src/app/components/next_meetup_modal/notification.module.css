@@ -1,6 +1,5 @@
-.notification_bar {
+.notification{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     position: fixed;
     margin: 0 0.5rem;
@@ -17,6 +16,10 @@
     transform-origin: bottom; */
     backdrop-filter: blur(10px);
 }
+
+/* .notification_bar {
+   
+} */
 
 .title{
     display: flex;
