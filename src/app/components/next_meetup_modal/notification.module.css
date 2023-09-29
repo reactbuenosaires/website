@@ -1,6 +1,5 @@
 .notification{
     display: flex;
-    justify-content: center;
     position: fixed;
     margin: 0 0.5rem;
     z-index: 11;
@@ -16,10 +15,14 @@
     transform-origin: bottom; */
     backdrop-filter: blur(10px);
 }
-
-/* .notification_bar {
-   
-} */
+.close_text{
+    margin: 1px;
+    padding: 1px;
+    color: var(--blue);
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
 
 .title{
     display: flex;
@@ -50,7 +53,7 @@
 } */
 
 @media (min-width: 767px) {
-    .notification_bar{
+    .notification{
         top: 5px;
         width: 99%;
         bottom: none;
