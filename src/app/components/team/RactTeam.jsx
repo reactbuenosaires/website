@@ -5,9 +5,9 @@ import Title from "@/app/components/Title";
 
 export default function ReactTeam() {
   return (
-    <div className={style.team_container}>
+    <section className={style.team_container}>
       <Title titleDescription={"ORGANIZADORES"} />
-      <div className={style.card_container}>
+      <section className={style.cards_container}>
         {teamNetworks.map((member, index) => {
           return (
             <TeamCard
@@ -19,7 +19,7 @@ export default function ReactTeam() {
             />
           );
         })}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
