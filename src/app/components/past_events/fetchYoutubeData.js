@@ -15,12 +15,11 @@ export async function fetchYoutubeData(apiKey) {
 export const lastYoutubeVideos = await fetchYoutubeData(key);
 
 function getLastUpcomingVideo(videos) {
-  // Usa Array.prototype.find() para encontrar el primer video con liveBroadcastContent igual a "upcoming"
   const upcomingVideo = videos.find((video) => {
     return video.snippet.liveBroadcastContent === 'upcoming';
   });
 
-  return upcomingVideo || null; // Devuelve el video upcoming o null si no se encuentra ninguno
+  return upcomingVideo || null; 
 }
 
 export const lastUpcomingVideo = getLastUpcomingVideo(lastYoutubeVideos);
@@ -34,22 +33,22 @@ export function getListVideoYoutube(data, status) {
   }).slice(0, 4);
 }
 
-export function liveContentStatus(data) {
-  if (data[0].snippet.liveBroadcastContent === 'upcoming') {
-    return 'upcoming'
-  } else if (data[0].snippet.liveBroadcastContent === 'live') {
-    return 'live'
-  } else if (data[0].snippet.liveBroadcastContent === 'none') {
-    return 'none'
-  }
-}
+// export function liveContentStatus(data) {
+//   if (data[0].snippet.liveBroadcastContent === 'upcoming') {
+//     return 'upcoming'
+//   } else if (data[0].snippet.liveBroadcastContent === 'live') {
+//     return 'live'
+//   } else if (data[0].snippet.liveBroadcastContent === 'none') {
+//     return 'none'
+//   }
+// }
 
-export function liveContent(data, status) {
-  return data.filter(item => {
-    const liveBroadcastContent = item.snippet.liveBroadcastContent;
-    return liveBroadcastContent === status;
-  })
-}
+// export function liveContent(data, status) {
+//   return data.filter(item => {
+//     const liveBroadcastContent = item.snippet.liveBroadcastContent;
+//     return liveBroadcastContent === status;
+//   })
+// }
 
 
 
