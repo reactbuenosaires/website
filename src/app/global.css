@@ -17,13 +17,17 @@
   --title-font-size: 1.5rem;
   --text-font-size: 1.3rem;
   --mb-font-size: 1.2rem;
+
+  --blue-bg-color: #0e1738;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --blur-filter: blur(9px) saturate(96%);
 }
 
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(14, 23, 56);
+  background-color: var(--blue-bg-color);
   font-size: 16px;
 }
 
