@@ -1,6 +1,6 @@
 import style from "@/app/components/next_meetup_modal/notification.module.css";
 import CloseNotification from "@/app/components/next_meetup_modal/CloseNotification";
-import NextMeetUp from './RenderNotificacion'
+import NextMeetUp from "./DataNotification";
 
 export default function Notification() {
   return (
