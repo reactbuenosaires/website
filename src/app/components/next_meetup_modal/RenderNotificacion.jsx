@@ -1,41 +1,31 @@
+import { Fragment } from "react";
 import style from "./notification.module.css";
-export default function RenderNotificacion({ videoStatus, video }) {
+import {
+  nextMeetup,
+} from "@/app/components/past_events/fetchYoutubeData";
+
+export default function RenderNotificacion() {
+  console.log(nextMeetup)
   return (
-    <div className={style.notification_bar}>
-      {videoStatus === "upcoming" && (
+    <Fragment>
+       {nextMeetup.snippet.liveBroadcastContent === 'upcoming' &&
+        <div className={style.notification_bar}>
         <div className={style.card}>
           <p className={style.title}>Próxima Meetup</p>
-          {video.map((videoContent, index) => (
-            <div key={index}>
-              <a
-                className={style.link}
-                href={`https://www.youtube.com/watch?v=${videoContent.id.videoId}`}
-                target="_blank"
-              >
-                {videoContent.snippet.title}
-              </a>
-            </div>
-          ))}
+          <div>
+            <a
+              className={style.link}
+              href={`https://www.youtube.com/watch?v=${nextMeetup.id.videoId}`}
+              target="_blank"
+            >
+              {nextMeetup.snippet.title}
+            </a>
+          </div>
         </div>
-      )}
+      </div>
+}
 
-      {videoStatus === "live" && (
-        <div className={style.card}>
-        <p className={style.title}>Estamos en vivo</p>
-          {video.map((videoContent, index) => (
-            <div key={index}>
-              <a
-                className={style.link}
-                href={`https://www.youtube.com/watch?v=${videoContent.id.videoId}`}
-                target="_blank"
-              >
-                {videoContent.snippet.title}
-              </a>
-            </div>
-          ))}
-        </div>
-      )}
-
-    </div>
+    </Fragment>
+   
   );
 }

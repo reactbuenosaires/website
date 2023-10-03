@@ -4,14 +4,14 @@ import style from "@/app/components/past_events/PastEventsSection.module.css";
 import dotenv from "dotenv";
 import {
   getListVideoYoutube,
-  fetchYoutubeData,
+  lastYoutubeVideos,
 } from "@/app/components/past_events/fetchYoutubeData";
 dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 export default async function PastEvents() {
-  const data = await fetchYoutubeData(apiKey);
+  const data = lastYoutubeVideos;
    let videoStatus = "none";
   const videos = getListVideoYoutube(data, videoStatus);
 
