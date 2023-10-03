@@ -13,9 +13,10 @@ export default async function DataRendered() {
   const data = await fetchYoutubeData(apiKey);
   const videoStatus = await liveContentStatus(data);
   let video = await liveContent(data, videoStatus);
+  console.log(videoStatus)
   return (
     <Fragment>
-      {videoStatus == "none" && (
+      {videoStatus ===!"none" && (
         <RenderNotificacion 
           videoStatus={videoStatus} 
           video={video} 
