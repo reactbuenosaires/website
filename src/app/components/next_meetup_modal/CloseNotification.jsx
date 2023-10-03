@@ -8,7 +8,7 @@ export default function CloseNotification({ children }) {
   return (
     <>
       {isDisplay && (
-        <>
+        <div className={style.notification}>
           <p
             className={style.close_text}
             onClick={() => setIsDisplay(!isDisplay)}
@@ -16,7 +16,7 @@ export default function CloseNotification({ children }) {
             Cerrar
           </p>
           {children}
-        </>
+        </div>
       )}
     </>
   );

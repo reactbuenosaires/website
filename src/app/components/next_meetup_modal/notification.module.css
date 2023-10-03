@@ -8,11 +8,6 @@
     padding: 0.5rem;
     background: rgba(0, 0, 0, 0.526);
     border: solid 0.5px var(--blue);
-    /* animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: bounce-3;
-    animation-timing-function: ease;
-    transform-origin: bottom; */
     backdrop-filter: blur(10px);
 }
 
