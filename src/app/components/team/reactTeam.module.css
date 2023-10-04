@@ -1,7 +1,7 @@
 .team_container {
   padding-top: 8rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

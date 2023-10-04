@@ -8,7 +8,7 @@
   bottom: 0px;
   backdrop-filter: var(--blur-filter);
   background: var(--glass-bg);
-  border-top: 1px solid rgba(209, 213, 219, 0.3);
+  border-top: var(--border-white);
   padding: 0 3rem;
 }
 
@@ -45,7 +45,7 @@
   scale: 1.1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .social_media_container {
     display: none;
   }

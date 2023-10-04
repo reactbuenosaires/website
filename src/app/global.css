@@ -14,6 +14,7 @@
   --secondary-white: #f4f4f4;
 
   --border-radius: 10px;
+  --border-white: 1px solid rgba(209, 213, 219, 0.3);
   --title-font-size: 1.5rem;
   --text-font-size: 1.3rem;
   --mb-font-size: 1.2rem;
