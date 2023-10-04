@@ -12,7 +12,7 @@ const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 export default async function PastEvents() {
   const data = await fetchYoutubeData(apiKey);
-   let videoStatus = "none";
+  let videoStatus = "none";
   const videos = getListVideoYoutube(data, videoStatus);
 
   return (
