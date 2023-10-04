@@ -12,7 +12,15 @@ export default function CloseNotification({ children }) {
     <>
       {isDisplay && (
         <section className={style.notification}>
-          <FontAwesomeIcon icon={faX} className={style.close_icon} size={14} onClick={() => setIsDisplay(false)} title="Cerrar"/>
+          <div className={style.icon_container}>
+            <FontAwesomeIcon
+              icon={faX}
+              className={style.close_icon}
+              size={14}
+              onClick={() => setIsDisplay(false)}
+              title="Cerrar"
+            />
+          </div>
           {children}
         </section>
       )}

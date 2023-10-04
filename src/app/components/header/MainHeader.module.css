@@ -14,7 +14,7 @@
   display: inherit;
 }
 
-@media (min-width: 1023px)  {
+@media (min-width: 1200px)  {
     .header {
         display: none;
     }
