@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import {
   getListVideoYoutube,
   fetchYoutubeData,
-} from "@/app/components/past_events/fetchYoutubeData";
+} from "@/app/utils/fetchYoutubeData";
 dotenv.config();
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;

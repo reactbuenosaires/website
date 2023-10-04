@@ -3,7 +3,7 @@ import {
   liveContentStatus,
   fetchYoutubeData,
   liveContent,
-} from "@/app/components/past_events/fetchYoutubeData";
+} from "@/app/utils/fetchYoutubeData";
 
 const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
