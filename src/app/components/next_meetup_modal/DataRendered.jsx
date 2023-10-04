@@ -15,7 +15,7 @@ export default async function DataRendered() {
   let video = await liveContent(data, videoStatus);
   return (
     <Fragment>
-      {videoStatus == "none" && (
+      {videoStatus === "upcoming" && (
         <RenderNotificacion 
           videoStatus={videoStatus} 
           video={video} 
