@@ -4,8 +4,7 @@ import About from "./components/about/AboutSection";
 import StatisticsSection from "./components/statistics/StatisticsSection";
 import ProposalSponsor from "@/app/components/proposal_sponsor/ProposalSponsor";
 import ReactTeam from "./components/team/RactTeam";
-import PastEvents from "@/app/components/past_events/PastEventsSection"
-import NextMeetupModal from "@/app/components/next_meetup_modal/Notification"
+import PastEvents from "@/app/components/past_events/PastEventsSection";
 
 const open = Open_Sans({ subsets: ["latin"] });
 
@@ -15,8 +14,7 @@ export default function Home() {
       <HeroSection />
       <About />
       <StatisticsSection />
-      <PastEvents/>
-      <NextMeetupModal/>
+      <PastEvents />
       <ProposalSponsor />
       <ReactTeam />
     </main>
