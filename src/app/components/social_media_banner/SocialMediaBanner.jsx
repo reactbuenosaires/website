@@ -8,7 +8,7 @@ export default function SocialMediaBanner() {
   return (
     <section className={style.social_media_container}>
       <div className={style.logo_image_container}>
-        <Image src={logo} height={75} />
+        <Image src={logo} height={65} alt="Logo de la comunidad React en Buenos Aires" />
       </div>
       <div className={style.network_icons_container}>
         {socialMedia.map((network) => (

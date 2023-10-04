@@ -7,7 +7,7 @@ const MainHeader = () => {
   return (
     <header className={style.header}>
       <div className={style.logo_container}>
-        <Image src={logo} height={50} />
+        <Image src={logo} height={50} alt="Logo de la comunidad React en Buenos Aires"/>
       </div>
     </header>
   );
