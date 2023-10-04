@@ -12,15 +12,17 @@ const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 export default async function DataRendered() {
   const data = await fetchYoutubeData(apiKey);
   const videoStatus = await liveContentStatus(data);
+  console.log(videoStatus);
   let video = await liveContent(data, videoStatus);
+  
   return (
     <Fragment>
-      {videoStatus === "upcoming" && (
-        <RenderNotificacion 
-          videoStatus={videoStatus} 
-          video={video} 
-        />
-      )}
+      { (videoStatus === "upcoming" || videoStatus === "none" || videoStatus === "live") && (
+  <RenderNotificacion 
+    videoStatus={videoStatus} 
+    video={video} 
+  />
+)}
     </Fragment>
   );
 }

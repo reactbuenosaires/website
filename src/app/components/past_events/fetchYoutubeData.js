@@ -24,10 +24,8 @@ export function liveContentStatus(data) {
 }
 
 export function liveContent(data, status) {
-  return data.filter(item => {
-    const liveBroadcastContent = item.snippet.liveBroadcastContent;
-    return liveBroadcastContent === status;
-  })
+  const video = data.find(item => item.snippet.liveBroadcastContent === status);
+  return video ;
 }
 
 
