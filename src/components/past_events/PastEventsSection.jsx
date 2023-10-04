@@ -1,6 +1,6 @@
 import Title from "../Title";
-import CardPastEvent from "@/app/components/past_events/CardPastEvent";
-import style from "@/app/components/past_events/PastEventsSection.module.css";
+import CardPastEvent from "@/components/past_events/CardPastEvent";
+import style from "@/components/past_events/PastEventsSection.module.css";
 import dotenv from "dotenv";
 import {
   getListVideoYoutube,

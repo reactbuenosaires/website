@@ -7,7 +7,7 @@
 
 /* Style background  */
 .hero_bg {
-  background-image: url("../../../../public/ReactBA-hero-img.png");
+  background-image: url("../../../public/ReactBA-hero-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@
 }
 
 .icon {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   color: var(--black);
   width: 15px;
   height: 15px;

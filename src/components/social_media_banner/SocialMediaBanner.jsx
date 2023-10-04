@@ -1,4 +1,4 @@
-import style from "@/app/components/social_media_banner/SocialMediaBanner.module.css";
+import style from "@/components/social_media_banner/SocialMediaBanner.module.css";
 import logo from "@/app/assets/React_en_Buenos_Aires_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socialMedia from "@/app/data/SocialMedia.js";
@@ -8,7 +8,11 @@ export default function SocialMediaBanner() {
   return (
     <section className={style.social_media_container}>
       <div className={style.logo_image_container}>
-        <Image src={logo} height={65} alt="Logo de la comunidad React en Buenos Aires" />
+        <Image
+          src={logo}
+          height={65}
+          alt="Logo de la comunidad React en Buenos Aires"
+        />
       </div>
       <div className={style.network_icons_container}>
         {socialMedia.map((network) => (

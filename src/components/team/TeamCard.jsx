@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "@/app/components/team/reactTeam.module.css";
+import style from "@/components/team/reactTeam.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 

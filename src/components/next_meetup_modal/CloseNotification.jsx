@@ -16,7 +16,6 @@ export default function CloseNotification({ children }) {
             <FontAwesomeIcon
               icon={faX}
               className={style.close_icon}
-              size={14}
               onClick={() => setIsDisplay(false)}
               title="Cerrar"
             />

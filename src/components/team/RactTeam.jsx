@@ -1,7 +1,7 @@
-import TeamCard from "@/app/components/team/TeamCard";
+import TeamCard from "@/components/team/TeamCard";
 import teamNetworks from "@/app/data/TeamNetworks.js";
-import style from "@/app/components/team/reactTeam.module.css";
-import Title from "@/app/components/Title";
+import style from "@/components/team/reactTeam.module.css";
+import Title from "@/components/Title";
 
 export default function ReactTeam() {
   return (

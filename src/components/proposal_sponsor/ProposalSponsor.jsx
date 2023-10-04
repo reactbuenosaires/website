@@ -1,7 +1,7 @@
-import Title from "@/app/components/Title";
-import CardProposal from "@/app/components/proposal_sponsor/CardProposal";
+import Title from "@/components/Title";
+import CardProposal from "@/components/proposal_sponsor/CardProposal";
 import proposalCards from "@/app/data/ProposalCards";
-import style from "@/app/components/proposal_sponsor/proposal.module.css";
+import style from "@/components/proposal_sponsor/proposal.module.css";
 
 export default function CallToAction(props) {
   return (

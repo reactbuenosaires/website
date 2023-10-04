@@ -1,4 +1,4 @@
-import style from "@/app/components/hero/heroSection.module.css";
+import style from "@/components/hero/heroSection.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 

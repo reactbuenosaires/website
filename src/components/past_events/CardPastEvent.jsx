@@ -1,5 +1,5 @@
 import React from "react";
-import style from "@/app/components/past_events/PastEventsSection.module.css";
+import style from "@/components/past_events/PastEventsSection.module.css";
 import Image from "next/image";
 
 const CardPastEvent = ({videoId, thumbnailUrl, title}) => {

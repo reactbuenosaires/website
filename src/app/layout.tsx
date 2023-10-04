@@ -1,8 +1,8 @@
 import "@/app/global.css";
-import MainHeader from "@/app/components/header/MainHeader";
-import MainFooter from "@/app/components/footer/MainFooter";
-import SocialMediaBanner from "./components/social_media_banner/SocialMediaBanner";
-import NextMeetupModal from "@/app/components/next_meetup_modal/Notification";
+import MainHeader from "@/components/header/MainHeader";
+import MainFooter from "@/components/footer/MainFooter";
+import SocialMediaBanner from "@/components/social_media_banner/SocialMediaBanner";
+import NextMeetupModal from "@/components/next_meetup_modal/Notification";
 
 export const metadata = {
   title: "React en Buenos Aires",
