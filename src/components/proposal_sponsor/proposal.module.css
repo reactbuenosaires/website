@@ -37,7 +37,7 @@
 
 .card {
   display: flex;
-  width: 400px;
+  width: 100%;
   text-align: center;
   background: var(--deep-blue);
   border-radius: var(--border-radius);
@@ -96,12 +96,6 @@
 @media (min-width: 767px) {
   .container_cards {
     flex-wrap: nowrap;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 550px) {
-  .card {
-    width: 330px;
   }
 }
 

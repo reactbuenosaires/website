@@ -3,7 +3,7 @@ import CardProposal from "@/components/proposal_sponsor/CardProposal";
 import proposalCards from "@/data/ProposalCards";
 import style from "@/components/proposal_sponsor/proposal.module.css";
 
-export default function CallToAction(props) {
+export default function CallToAction() {
   return (
     <section className={style.proposal_container}>
       <Title titleDescription="IMPULSA LA COMUNIDAD" />
