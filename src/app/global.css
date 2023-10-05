@@ -22,6 +22,8 @@
   --blue-bg-color: #0e1738;
   --glass-bg: rgba(255, 255, 255, 0.04);
   --blur-filter: blur(9px) saturate(96%);
+
+  --max-width-screen: 1200px; 
 }
 
 body {

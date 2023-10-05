@@ -1,6 +1,6 @@
 .proposal_container {
   padding-top: 8rem;
-  max-width: 1200px;
+  max-width: var(--max-width-screen);
   margin: 0 auto;
 }
 
