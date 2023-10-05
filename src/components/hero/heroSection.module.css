@@ -1,0 +1,183 @@
+/* Main style component */
+.hero_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style background  */
+.hero_bg {
+  background-image: url("../../../public/ReactBA-hero-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(2px);
+  opacity: 0.2;
+}
+
+/* Style container title */
+.title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  color: var(--white);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.description {
+  color: var(--white);
+  margin: 2rem;
+  font-size: var(--text-font-size);
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 0.5rem;
+  color: var(--black);
+  width: 15px;
+  height: 15px;
+}
+
+.inner_title_container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Animation code */
+.span1 {
+  position: absolute;
+  color: var(--primary-color);
+  animation: animation1 5s ease-in-out infinite;
+}
+
+.span2 {
+  position: absolute;
+  color: var(--primary-color);
+  animation: animation2 5s ease-in-out infinite;
+}
+
+@keyframes animation1 {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  28% {
+    opacity: 0;
+  }
+  35%,
+  40% {
+    transform: translateY(-80%);
+  }
+  50%,
+  70% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation2 {
+  0%,
+  25% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  30%,
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75%,
+  80% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+}
+
+/* Estilos para galaxy fold */
+@media (max-width: 320px) {
+  .title_container {
+    top: 15%;
+  }
+}
+
+/* Estilos para tablet */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    margin: 2rem 5rem;
+    font-size: 1.5rem;
+  }
+  .inner_title_container {
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-button {
+    padding: 12px;
+  }
+  .description {
+    font-size: 1.5rem;
+    margin: 2rem 10rem;
+  }
+  .inner_title_container {
+    height: 60px;
+  }
+}
+
+/* Estilos para desktop */
+@media (min-width: 1200px) {
+  .main-button {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .title_container {
+    top: 20%;
+  }
+  .inner_title_container {
+    height: 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-button {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}

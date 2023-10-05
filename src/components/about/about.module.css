@@ -1,0 +1,146 @@
+.about_container {
+  padding-top: 8rem;
+  max-width: var(--max-width-screen);
+  margin: 0 auto;
+}
+
+.section_container {
+  padding: 0 2.5rem;
+}
+
+.text_container {
+  padding: 2rem 2.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 15px;
+  font-weight: 100;
+  font-size: var(--text-font-size);
+  margin: 2rem 0;
+  color: var(--sky-blue);
+}
+
+.text_description {
+  position: relative;
+  color: var(--secondary-white);
+  font-weight: 300;
+  text-align: center;
+  font-size: var(--text-font-size);
+  word-spacing: 4.5px;
+  margin: 2rem 5rem;
+}
+
+.sentence_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.motivation_container {
+  font-size: var(--text-font-size);
+  padding: 2rem 1rem;
+  margin: 0 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--secondary-white);
+  background: var(--deep-blue);
+  border: solid 2px var(--blue);
+  border-radius: var(--border-radius);
+  width: fit-content;
+}
+
+.container_Images {
+  padding: 2.5rem 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-radius: var(--border-radius);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover,
+.container_text:hover,
+.image:hover {
+  opacity: 1;
+}
+
+.container_text {
+  display: flex;
+  top: 20%;
+  padding-left: 10px;
+  position: absolute;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* Estilos para galaxy fold */
+@media (max-width: 320px) {
+  .subtitle {
+    line-height: 30px;
+    font-size: var(--mb-font-size);
+  }
+  .text_description {
+    font-size: var(--mb-font-size);
+    margin: 10px 0px;
+  }
+  .text {
+    font-size: var(--mb-font-size);
+  }
+  .text_motivation {
+    font-size: var(--mb-font-size);
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_Images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+  .card {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    line-height: 30px;
+  }
+  .text {
+    font-size: var(--mb-font-size);
+  }
+  .text_description{
+    font-size: var(--mb-font-size);
+    margin: 10px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container_Images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

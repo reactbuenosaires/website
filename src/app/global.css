@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #00d8ff;
+  --sky-blue: #6ed9ff;
+  --blue: #1f7e9f;
+  --deep-blue: #0C1433;
+
+  --secondary-color: #545454;
+  --gray: #5f5f5f;
+  --ligth-gray: #8a8a8a;
+  --lighter-gray: #b5b5b5;
+
+  --black: #000000;
+  --white: #ffffff;
+  --secondary-white: #f4f4f4;
+
+  --border-radius: 10px;
+  --border-white: 1px solid rgba(209, 213, 219, 0.3);
+  --title-font-size: 1.5rem;
+  --text-font-size: 1.3rem;
+  --mb-font-size: 1.2rem;
+
+  --blue-bg-color: #0e1738;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --blur-filter: blur(9px) saturate(96%);
+
+  --max-width-screen: 1200px; 
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue-bg-color);
+  font-size: 16px;
+}
+
+.titles {
+  text-align: center;
+  font-size: var(--title-font-size);
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.text {
+  margin-top: 2em;
+  font-weight: 500;
+  color: var(--secondary-white);
+  text-align: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.main-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  color: var(--black);
+  background: var(--primary-color);
+}
+
+.main-button:hover {
+  background: var(--sky-blue);
+  border: 1px solid;
+  border: double;
+}
+
+@media (min-width: 540px) {
+  .main-button {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 390px){
+  .titles{
+    font-size: 1.4rem;
+  }
+}

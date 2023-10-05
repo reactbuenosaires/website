@@ -1,0 +1,75 @@
+.past_events_container {
+  padding-top: 8rem;
+  max-width: var(--max-width-screen);
+  margin: 0 auto;
+}
+
+.subtitle_container {
+  padding: 1rem 2.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 100;
+  font-size: var(--text-font-size);
+  margin: 2rem 0;
+  color: var(--sky-blue);
+}
+
+.videos_container {
+  padding: 2.5rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.youtube_card {
+  border: solid 2px var(--blue);
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+
+.image_container {
+  aspect-ratio: 3/2;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.video_title {
+  color:var(--white);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 580px) and (max-width: 992px) {
+  .videos_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .videos_container {
+    flex-direction: row;
+  }
+  .youtube_card {
+    flex: 1;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .youtube_card:hover {
+    transform: scale(1.05);
+  }
+}

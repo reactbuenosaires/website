@@ -1,0 +1,57 @@
+.notification {
+  position: fixed;
+  bottom: 0.5rem;
+  z-index: 11;
+  width: 95%;
+  margin: 0 0.8rem;
+  padding: 0.8rem;
+  background: var(--glass-bg);
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: solid 0.5px var(--blue);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.icon_container {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.close_icon {
+  width: 14px;
+  color: var(--lighter-gray);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  margin-top: 2px;
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 767px) {
+  .notification {
+    top: 5px;
+    width: 98%;
+    height: max-content;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}

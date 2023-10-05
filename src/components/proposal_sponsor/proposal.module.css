@@ -1,0 +1,116 @@
+.proposal_container {
+  padding-top: 8rem;
+  max-width: var(--max-width-screen);
+  margin: 0 auto;
+}
+
+.text_container {
+  padding: 0 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 100;
+  font-size: var(--text-font-size);
+  margin: 2rem 0;
+  color: var(--sky-blue);
+}
+
+.text_description {
+  color: var(--secondary-white);
+  text-align: center;
+  font-size: var(--mb-font-size);
+  font-weight: 300;
+}
+
+/* Estilos generales para las cards */
+.container_cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem 2rem 0;
+  color: var(--secondary-white);
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  background: var(--deep-blue);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--blue);
+  margin-bottom: 2rem;
+}
+
+.icon_container {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.description {
+  text-align: start;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description p {
+  font-size: var(--text-font-size);
+  font-weight: 200;
+}
+
+.action_button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--white);
+  border: solid 2px var(--blue);
+  border-radius: var(--border-radius);
+  letter-spacing: 2px;
+}
+
+.action_button a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: var(--text-font-size);
+}
+
+.action_button:hover {
+  background-color: var(--blue);
+  /* Color de fondo del botón hover */
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .container_cards {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+}

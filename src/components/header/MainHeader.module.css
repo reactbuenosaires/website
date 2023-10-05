@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background: var(--glass-bg);
+  position: fixed;
+  z-index: 10;
+  border-bottom: var(--border-white);
+  display: flex;
+  align-items: center;
+}
+
+.logo_container {
+  margin-left: 1.3rem;
+  display: inherit;
+}
+
+@media (min-width: 1200px)  {
+    .header {
+        display: none;
+    }
+}
