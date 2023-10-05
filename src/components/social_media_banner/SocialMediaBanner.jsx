@@ -1,7 +1,7 @@
 import style from "@/components/social_media_banner/SocialMediaBanner.module.css";
-import logo from "@/app/assets/React_en_Buenos_Aires_logo.png";
+import logo from "@/assets/React_en_Buenos_Aires_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import socialMedia from "@/app/data/SocialMedia.js";
+import socialMedia from "@/data/SocialMedia.js";
 import Image from "next/image";
 
 export default function SocialMediaBanner() {

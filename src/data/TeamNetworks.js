@@ -1,7 +1,7 @@
-import facuProfileImg from "@/app/assets/team/Facu_facundozurdo.jpg";
-import nanoProfileImg from "@/app/assets/team/Nano_nanovazquez__.jpg";
-import nickyProfileImg from "@/app/assets/team/Nicky_naniitevez.png";
-import mateProfileImg from "@/app/assets/team/Mateo_mateosilguero1.jpg";
+import facuProfileImg from "@/assets/team/Facu_facundozurdo.jpg";
+import nanoProfileImg from "@/assets/team/Nano_nanovazquez__.jpg";
+import nickyProfileImg from "@/assets/team/Nicky_naniitevez.png";
+import mateProfileImg from "@/assets/team/Mateo_mateosilguero1.jpg";
 
 const teamNetworks = [
   {

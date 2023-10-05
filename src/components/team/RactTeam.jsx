@@ -1,5 +1,5 @@
 import TeamCard from "@/components/team/TeamCard";
-import teamNetworks from "@/app/data/TeamNetworks.js";
+import teamNetworks from "@/data/TeamNetworks.js";
 import style from "@/components/team/reactTeam.module.css";
 import Title from "@/components/Title";
 

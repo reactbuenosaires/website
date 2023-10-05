@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Title";
 import Image from "next/image";
 import style from "./StatisticsSection.module.css";
-import { statsImages } from "@/app/data/Images";
+import { statsImages } from "@/data/Images";
 
 export default function StatisticsSection() {
   return (

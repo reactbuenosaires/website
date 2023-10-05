@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./MainFooter.module.css";
-import socialMedia from "@/app/data/SocialMedia";
+import socialMedia from "@/data/SocialMedia";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 

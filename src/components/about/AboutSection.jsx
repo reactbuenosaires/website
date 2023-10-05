@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "@/components/about/about.module.css";
 import Title from "@/components/Title";
-import { aboutUsImages } from "@/app/data/Images";
+import { aboutUsImages } from "@/data/Images";
 
 export default function AboutSection() {
   return (
