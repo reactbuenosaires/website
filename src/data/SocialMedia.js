@@ -1,4 +1,5 @@
 import {
+  faGithub,
   faInstagram,
   faLinkedin,
   faMeetup,
@@ -36,6 +37,12 @@ const socialMedia = [
     title: "LinkedIn",
     username: "React Buenos Aires",
     icon: faLinkedin,
+  },
+  {
+    url: "https://github.com/reactbuenosaires",
+    title: "GitHub",
+    username: "React Buenos Aires",
+    icon: faGithub,
   },
 ];
 
