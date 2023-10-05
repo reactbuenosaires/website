@@ -1,29 +1,7 @@
-export async function fetchYoutubeData(apiKey) {
-  const res = await fetch(
+export async function getYoutubeVideos(apiKey) {
+  const response = await fetch(
     `https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=UC8lMWXElwhflZxWqsE6BuPQ&part=snippet,id&order=date&maxResults=6`
   );
-  const json_Data = await res.json();
-  return json_Data.items;
-}
-
-export function getListVideoYoutube(data, status) {
-  return data.filter(item => {
-    const liveBroadcastContent = item.snippet.liveBroadcastContent;
-    return liveBroadcastContent === status;
-  }).slice(0, 4);
-}
-
-export function liveContentStatus(data) {
-  if (data[0].snippet.liveBroadcastContent === 'upcoming') {
-    return 'upcoming'
-  } else if (data[0].snippet.liveBroadcastContent === 'live') {
-    return 'live'
-  } else if (data[0].snippet.liveBroadcastContent === 'none') {
-    return 'none'
-  }
-}
-
-export function liveContent(data, status) {
-  const video = data.find(item => item.snippet.liveBroadcastContent === status);
-  return video;
+  const data = await response.json();
+  return data.items;
 }
