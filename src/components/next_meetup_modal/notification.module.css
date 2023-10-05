@@ -5,7 +5,7 @@
   width: 95%;
   margin: 0 0.8rem;
   padding: 0.8rem;
-  background: rgba(0, 0, 0, 0.526);
+  background: var(--glass-bg);
   box-sizing: border-box;
   border-radius: var(--border-radius);
   border: solid 0.5px var(--blue);
@@ -28,7 +28,7 @@
 .title {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--white);
   margin-top: 2px;
 }
 

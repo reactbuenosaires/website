@@ -6,9 +6,9 @@ export default function RenderNotificacion({ videoStatus, video }) {
   if (videoStatus === "none") {
     notificationMessage = "Revive la última meetup:";
   } else if (videoStatus === "live") {
-    notificationMessage = "¡Estamos en vivo!";
+    notificationMessage = "😎 ¡Estamos en vivo!";
   } else if (videoStatus === "upcoming") {
-    notificationMessage = "Próxima Meetup:";
+    notificationMessage = "🚀 Próxima Meetup:";
   }
   return (
     <>
