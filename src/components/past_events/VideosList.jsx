@@ -10,8 +10,8 @@ const VideosList = () => {
   const { videosList } = useYoutubeDataContext();
   return (
     <>
-      {videosList ? (
-        <div className={style.videos_container}>
+      {videosList.length > 0 ? (
+        <section className={style.videos_container}>
           {videosList.map((video) => (
             <CardPastEvent
               key={video.id.videoId}
@@ -20,7 +20,7 @@ const VideosList = () => {
               title={video.snippet.title}
             />
           ))}
-        </div>
+        </section>
       ) : (
         <a
           className={style.button}
