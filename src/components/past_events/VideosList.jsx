@@ -5,6 +5,8 @@ import CardPastEvent from "@/components/past_events/CardPastEvent";
 import { useYoutubeDataContext } from "@/context/YoutubeData";
 import style from "./PastEventsSection.module.css";
 import Button from "../Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const VideosList = () => {
   const { videosList } = useYoutubeDataContext();
@@ -22,14 +24,18 @@ const VideosList = () => {
           ))}
         </section>
       ) : (
-        <div className={style.button_containe}>
-          <a
-            href="https://www.youtube.com/channel/UC8lMWXElwhflZxWqsE6BuPQ"
-            target="blank"
-          >
-            <Button>Youtube</Button>
-          </a>
-        </div>
+        <section className={style.button_containe}>
+          <Button>
+            <a
+              target="blank"
+              className={style.link}
+              href="https://www.youtube.com/channel/UC8lMWXElwhflZxWqsE6BuPQ"
+            >
+              Explora nuestra lista de charlas
+              <FontAwesomeIcon icon={faYoutube} className={style.icon} />
+            </a>
+          </Button>
+        </section>
       )}
     </>
   );
