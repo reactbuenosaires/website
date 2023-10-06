@@ -6,13 +6,13 @@ const proposalCards = [
     text: "Sponsor",
     description:
     "¿Querés apoyar a la comunidad como sponsor de una meetup?",
-    form_Link: "https://forms.gle/p1jTQdd3JdeAdCnU7",
+    form_Link: "https://forms.gle/bsNT2ERQ57oFVfGv6",
   },
   {
     icon: faMicrophone,
     text: "Speaker",
     description: "¿Tenés algo que decir? ¡Vení a contarnos!",
-    form_Link: "https://forms.gle/4Tasp2yGpwx9EgY38",
+    form_Link: "https://forms.gle/HgsVDHVC8kEdheiWA",
   },
 ];
 
