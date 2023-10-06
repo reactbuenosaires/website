@@ -27,6 +27,24 @@
 .links {
   text-decoration: none;
 }
+.icon{
+  color: #FF0000;
+  width: 30px;
+  height: 30px ;
+}
+
+.button_containe{
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--mb-font-size)
+}
+
+.button_containe a{
+  text-decoration: none;
+}
+
 
 .youtube_card {
   border: solid 2px var(--blue);
