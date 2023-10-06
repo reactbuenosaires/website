@@ -12,9 +12,7 @@ const PastEvents = () => {
           Youtube!
         </h3>
       </div>
-      <section >
         <VideosList />
-      </section>
     </section>
   );
 };
