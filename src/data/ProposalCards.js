@@ -5,7 +5,7 @@ const proposalCards = [
     icon: faHandshake,
     text: "Sponsor",
     description:
-      "Contribuye con la comunidad desde tus espacios y con tu equipo",
+    "¿Querés apoyar a la comunidad como sponsor de una meetup?",
     form_Link: "https://forms.gle/p1jTQdd3JdeAdCnU7",
   },
   {

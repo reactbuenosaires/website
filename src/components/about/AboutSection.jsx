@@ -31,7 +31,7 @@ export default function AboutSection() {
       <section className={style.text_container}>
         <p className={style.text_description}>
           Las meetups son el lugar ideal para compartir conocimiento, hablar de
-          tecnología y desarrollar nuevos proyectos. ¡Únete a formar parte de
+          tecnología y desarrollar nuevos proyectos. ¡Formar parte de
           esta comunidad de mentes creativas y entusiastas de la tecnología!
         </p>
       </section>
