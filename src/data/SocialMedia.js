@@ -41,7 +41,7 @@ const socialMedia = [
   {
     url: "https://github.com/reactbuenosaires",
     title: "GitHub",
-    username: "React Buenos Aires",
+    username: "@reactbuenosaires",
     icon: faGithub,
   },
 ];
