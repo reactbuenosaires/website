@@ -12,7 +12,7 @@ const PastEvents = () => {
           Youtube!
         </h3>
       </div>
-      <section className={style.videos_container}>
+      <section >
         <VideosList />
       </section>
     </section>

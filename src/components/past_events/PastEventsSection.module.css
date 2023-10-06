@@ -28,6 +28,12 @@
   text-decoration: none;
 }
 
+.button{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .youtube_card {
   border: solid 2px var(--blue);
   border-radius: var(--border-radius);
