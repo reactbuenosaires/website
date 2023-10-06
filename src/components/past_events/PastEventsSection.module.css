@@ -28,9 +28,11 @@
   text-decoration: none;
 }
 
-.button{
+.button_containe{
   display: flex;
   justify-content: center;
+}
+.button_containe a{
   text-decoration: none;
 }
 

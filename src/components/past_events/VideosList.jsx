@@ -22,13 +22,14 @@ const VideosList = () => {
           ))}
         </section>
       ) : (
-        <a
-          className={style.button}
-          href="https://www.youtube.com/channel/UC8lMWXElwhflZxWqsE6BuPQ"
-          target="blank"
-        >
-          <Button>Youtube</Button>
-        </a>
+        <div className={style.button_containe}>
+          <a
+            href="https://www.youtube.com/channel/UC8lMWXElwhflZxWqsE6BuPQ"
+            target="blank"
+          >
+            <Button>Youtube</Button>
+          </a>
+        </div>
       )}
     </>
   );
