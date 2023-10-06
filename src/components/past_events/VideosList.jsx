@@ -29,9 +29,9 @@ const VideosList = () => {
             <a
               target="blank"
               className={style.link}
-              href="https://www.youtube.com/channel/UC8lMWXElwhflZxWqsE6BuPQ"
+              href="https://www.youtube.com/@react_ba"
             >
-              Explora nuestra lista de charlas
+              Ver en Youtube
               <FontAwesomeIcon icon={faYoutube} className={style.icon} />
             </a>
           </Button>
