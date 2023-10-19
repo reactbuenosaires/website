@@ -1,0 +1,40 @@
+.random_container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        max-width: var(--max-width-screen);
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+}
+
+.set_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--primary-color);
+        font-size: var(--title-font-size);
+}
+
+.max_number {
+        padding: .9rem;
+        border: var(--border-white);
+        border-radius: var(--border-radius);
+        margin: 2rem auto;
+}
+
+.random {
+        margin: 1rem;
+        padding: 0rem 1rem;
+        background-color: var(--sky-blue);
+        border-radius: var(--border-radius);
+}
+
+.random_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+}
