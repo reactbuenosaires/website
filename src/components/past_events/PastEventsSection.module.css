@@ -27,6 +27,7 @@
 .links {
   text-decoration: none;
 }
+
 .icon{
   color: #FF0000;
   width: 30px;
@@ -44,7 +45,6 @@
 .button_containe a{
   text-decoration: none;
 }
-
 
 .youtube_card {
   border: solid 2px var(--blue);
