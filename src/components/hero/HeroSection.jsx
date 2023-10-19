@@ -36,7 +36,6 @@ export default function HeroSection() {
             </a>
           </Button>
         </div>
-        
       </div>
     </section>
   );

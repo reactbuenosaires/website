@@ -29,6 +29,13 @@
   margin: 4px;
 }
 
+.link_giveaway{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+}
+
 .icon {
   cursor: pointer;
   background: var(--secondary-white);

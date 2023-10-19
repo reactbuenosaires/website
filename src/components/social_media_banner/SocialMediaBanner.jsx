@@ -3,6 +3,8 @@ import logo from "@/assets/React_en_Buenos_Aires_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socialMedia from "@/data/SocialMedia.js";
 import Image from "next/image";
+import Link from "next/link";
+import Giveaways from "@/app/Giveaways/page";
 
 export default function SocialMediaBanner() {
   return (
@@ -14,6 +16,7 @@ export default function SocialMediaBanner() {
           alt="Logo de la comunidad React en Buenos Aires"
         />
       </div>
+      <Link href={"/Giveaways"} className={style.link_giveaway}>Sorteos</Link>
       <div className={style.network_icons_container}>
         {socialMedia.map((network) => (
           <div className={style.icon_container} key={network.title}>
