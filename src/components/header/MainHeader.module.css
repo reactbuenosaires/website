@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background: var(--glass-bg);
   position: fixed;
@@ -7,11 +7,18 @@
   border-bottom: var(--border-white);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo_container {
   margin-left: 1.3rem;
   display: inherit;
+}
+
+.random_link{
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--white);
 }
 
 @media (min-width: 1200px)  {
