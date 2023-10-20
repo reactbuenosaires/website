@@ -1,16 +1,14 @@
-import styles from "./giveaways.module.css"
-import GiveawaysButton from "../../data/GiveawayButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import GiveawaysIcon from "../../data/GiveawayButtons";
 
 export default function GiveawaysButtons() {
   return (
-    <section className={styles.icons_container}>
-      {GiveawaysButton.map((button,index) => (
-        <div key={index} className={styles.icons_bars}>
-          <div>{button.name}</div>
-          <FontAwesomeIcon icon={button.icon} />
-        </div>
-      ))}
-    </section>
+    <>
+      {GiveawaysIcon.map((index, buttons) => {
+        <div key={index}>
+          <span>Hola</span>
+          <span>{buttons.icon}</span>
+        </div>;
+      })}
+    </>
   );
 }

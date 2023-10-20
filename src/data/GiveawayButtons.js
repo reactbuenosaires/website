@@ -1,6 +1,6 @@
 import { faAddressCard, faFile } from "@fortawesome/free-regular-svg-icons";
 import { faListOl } from "@fortawesome/free-solid-svg-icons";
- const GiveawaysButton =[
+const GiveawaysButtons =[
     {
         name:'Random', 
         icon:faListOl
@@ -15,5 +15,4 @@ import { faListOl } from "@fortawesome/free-solid-svg-icons";
     }
 ]
 
-export default GiveawaysButton;
-
+export default GiveawaysButtons;
