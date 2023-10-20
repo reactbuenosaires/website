@@ -3,6 +3,7 @@
   height: 60px;
   background: var(--glass-bg);
   position: fixed;
+  top: 0;
   z-index: 10;
   border-bottom: var(--border-white);
   display: flex;

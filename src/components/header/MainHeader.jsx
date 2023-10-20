@@ -10,7 +10,7 @@ const MainHeader = () => {
       <div className={style.logo_container}>
         <Image src={logo} height={50} alt="Logo de la comunidad React en Buenos Aires"/>
       </div>
-      <Link href={"/random"} className={style.random_link}>Sorteos</Link>
+      <Link href={"/giveaways"} className={style.random_link}>Sorteos</Link>
     </header>
   );
 };
