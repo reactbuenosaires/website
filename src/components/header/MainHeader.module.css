@@ -4,11 +4,9 @@
   background: var(--glass-bg);
   position: fixed;
   z-index: 10;
-  top: 0;
   border-bottom: var(--border-white);
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .logo_container {
@@ -16,13 +14,8 @@
   display: inherit;
 }
 
-.link_tag {
-  color: var(--white);
-  text-decoration: none;
-}
-
-@media (min-width: 1200px) {
-  .header {
-    display: none;
-  }
+@media (min-width: 1200px)  {
+    .header {
+        display: none;
+    }
 }

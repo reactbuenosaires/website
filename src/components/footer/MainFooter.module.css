@@ -7,8 +7,6 @@
   align-items: center;
   padding-top: 2.5rem;
   box-sizing: border-box;
-  position: static;
-  bottom: 0;
 }
 
 .text {
