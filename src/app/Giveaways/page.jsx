@@ -5,7 +5,7 @@ import Giveawayicons from "./GiveawaysButtons";
 export default function Giveaways() {
   return (
     <div className={styles.giveaways_container}>
-      <Title titleDescription="SORTEOS" />
+      <Title titleDescription="SORTEOS"/>
       <Giveawayicons />
     </div>
   );
