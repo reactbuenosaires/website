@@ -47,11 +47,23 @@
     font-weight: 800;
 }
 
+.random_winner {
+    background-color: transparent;
+    color: var(--white);
+    border-radius: var(--border-radius);
+    border: var(--border-white);
+}
+
 .random_winner span {
     padding: 1rem;
 }
 
-.random_button{
+.random_button {
+    margin-top: 1rem;
+    font-size: var(--text-font-size);
+    font-weight: 800;
+    padding: .5rem .8rem;
     border: var(--border-white);
     border-radius: var(--border-radius);
+    color: var(--deep-blue);
 }
