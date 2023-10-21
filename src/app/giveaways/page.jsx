@@ -9,7 +9,7 @@ export default function Giveaways() {
   return (
     <section className={styles.giveaways_section}>
       <Title titleDescription="SORTEO" />
-      <Link href={"/random"} className={styles.giveaways_link}>
+      <Link href={"/giveaways/random"} className={styles.giveaways_link}>
       <div className={styles.random_bar}>
         <FontAwesomeIcon icon={faListOl} />
         <p>Random</p>

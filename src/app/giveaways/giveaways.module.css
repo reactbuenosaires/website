@@ -1,22 +1,22 @@
-.giveaways_section{
+.giveaways_section {
     margin-top: 5rem;
-    height: 100vh;  /* */
+    height: 100vh;/* ajusto propiedad con vh para aplicar a la pantalla*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.giveaways_link{
+.giveaways_link {
     text-decoration: none;
     width: 80%;
     cursor: pointer;
 }
 
-.giveaways_link:hover{
+.giveaways_link:hover {
     scale: 1.03;
 }
 
-.random_bar{
+.random_bar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,11 +27,12 @@
     padding: 0 1rem;
 }
 
-@media (min-width:667px){
-    .giveaways_section{
+@media (min-width:667px) {
+    .giveaways_section {
         margin-top: 6rem;
     }
-    .giveaways_link{
+
+    .giveaways_link {
         width: 500px;
     }
 }
