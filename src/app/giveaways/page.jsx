@@ -7,13 +7,13 @@ import Link from "next/link";
 
 export default function Giveaways() {
   return (
-    <section className={styles.giveaways_section}>
+    <section className={styles.giveaways_container}>
       <Title titleDescription="SORTEO" />
       <Link href={"/giveaways/random"} className={styles.giveaways_link}>
-      <div className={styles.random_bar}>
-        <FontAwesomeIcon icon={faListOl} />
-        <p>Random</p>
-      </div>
+        <div className={styles.random_bar}>
+          <FontAwesomeIcon icon={faListOl} />
+          <p>Random</p>
+        </div>
       </Link>
     </section>
   );
