@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background: var(--glass-bg);
   position: fixed;
@@ -16,7 +16,7 @@
   display: inherit;
 }
 
-.random_link{
+.giveaways_link{
   margin-right: 10px;
   text-decoration: none;
   color: var(--white);

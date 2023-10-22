@@ -74,7 +74,7 @@ body {
 @media (min-width: 540px) {
   .main-button {
     font-size: 1.5rem;
-    /* padding: 15px; */
+    padding: 15px;
   }
 }
 
