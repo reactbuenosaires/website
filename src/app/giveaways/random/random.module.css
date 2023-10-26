@@ -28,7 +28,9 @@
     background-color: transparent;
     text-align: center;
 }
-
+.inputError {
+    border: 1px solid yellow;
+}
 .input:focus {
     outline: none;
     border-color: var(--white);
@@ -36,6 +38,7 @@
 
 .random_winner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -54,8 +57,10 @@
     border: var(--border-white);
 }
 
-.random_winner span {
-    padding: 1rem;
+.winner_text{
+    color: var(--white);
+    padding-top: 0.2rem;
+    font-weight: 150;
 }
 
 .random_button {
