@@ -2,31 +2,23 @@
 import Title from "@/components/Title";
 import styles from "./random.module.css";
 import { useState, useEffect } from "react";
-import { getRandomNumber } from "../../../utils/radom";
+import { getRandomNumber } from "../../../utils/getRandomNumber";
 
 export default function Random() {
   const [maxInputNumner, setMaxInputNumner] = useState("");
   const [winner, setWinner] = useState("");
-  const [isGenerateButtonClicked, setGenerateButtonClicked] = useState(false);
 
   const handleMaxInputNumber = (e) => {
     setMaxInputNumner(e.target.value);
-    setGenerateButtonClicked(false);
   };
 
   const generateRandom = () => {
     if (!maxInputNumner) {
-      setGenerateButtonClicked(true);
     } else {
       const randomValue = getRandomNumber(maxInputNumner);
       setWinner(randomValue);
-      setGenerateButtonClicked(false);
     }
   };
-
-  const inputClass = `${styles.input} ${
-    isGenerateButtonClicked && !maxInputNumner ? styles.inputError : ""
-  }`;
 
   useEffect(() => {}, [winner]);
 
@@ -37,13 +29,15 @@ export default function Random() {
         <p className={styles.text}>Participantes</p>
         <input
           type="number"
-          className={inputClass}
+          className={styles.input}
           onChange={handleMaxInputNumber}
         />
       </div>
-      <button className={styles.random_button} onClick={generateRandom}>
-        Generar
-      </button>
+      {maxInputNumner && (
+        <button className={styles.random_button} onClick={generateRandom}>
+          Generar
+        </button>
+      )}
       {winner && (
         <>
           <div className={styles.random_winner}>{winner}</div>

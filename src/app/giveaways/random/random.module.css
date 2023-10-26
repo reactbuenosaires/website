@@ -28,9 +28,7 @@
     background-color: transparent;
     text-align: center;
 }
-.inputError {
-    border: 1px solid yellow;
-}
+
 .input:focus {
     outline: none;
     border-color: var(--white);
