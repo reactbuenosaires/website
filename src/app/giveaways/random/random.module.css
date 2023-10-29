@@ -69,4 +69,6 @@
     border: var(--border-white);
     border-radius: var(--border-radius);
     color: var(--deep-blue);
+    cursor: pointer;
+
 }
