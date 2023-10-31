@@ -36,6 +36,7 @@
 
 .random_winner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -54,8 +55,10 @@
     border: var(--border-white);
 }
 
-.random_winner span {
-    padding: 1rem;
+.winner_text{
+    color: var(--white);
+    padding-top: 0.2rem;
+    font-weight: 150;
 }
 
 .random_button {
@@ -66,4 +69,6 @@
     border: var(--border-white);
     border-radius: var(--border-radius);
     color: var(--deep-blue);
+    cursor: pointer;
+
 }
