@@ -3,6 +3,7 @@ import logo from "@/assets/React_en_Buenos_Aires_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socialMedia from "@/data/SocialMedia.js";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SocialMediaBanner() {
   return (
@@ -27,6 +28,9 @@ export default function SocialMediaBanner() {
           </div>
         ))}
       </div>
+        <Link href={"/giveaways"} className={style.giveaways_link}>
+          Sorteos
+        </Link>
     </section>
   );
 }
