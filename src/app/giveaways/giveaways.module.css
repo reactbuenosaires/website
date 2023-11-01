@@ -1,5 +1,5 @@
 .giveaways_container {
-    margin-top: 5rem;
+    margin-top: 9rem;
     height: 100vh;/* ajusto propiedad con vh para aplicar a la pantalla*/
     display: flex;
     flex-direction: column;
