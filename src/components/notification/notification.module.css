@@ -45,7 +45,6 @@
 
 @media (min-width: 767px) {
   .notification {
-    top: 5px;
     width: 98%;
     height: max-content;
   }
@@ -53,5 +52,11 @@
   .card {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .notification {
+    top: 5px;
   }
 }
