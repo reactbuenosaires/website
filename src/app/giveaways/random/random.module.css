@@ -9,6 +9,7 @@
 .input_container {
     display: flex;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .text {
@@ -27,21 +28,17 @@
     font-weight: 700;
     background-color: transparent;
     text-align: center;
-
 }
 
 .input:focus {
     outline: none;
-    border-color: var(--white);  
-    appearance: none;
-    -webkit-appearance: none;
+    border-color: var(--white);
 }
 
 .input[type='number']::-webkit-inner-spin-button,
-.input[type='number']::-webkit-outer-spin-button{
--webkit-appearance: none;
+.input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
-
 
 .random_winner {
     display: flex;
@@ -64,7 +61,7 @@
     border: var(--border-white);
 }
 
-.winner_text{
+.winner_text {
     color: var(--white);
     padding-top: 0.2rem;
     font-weight: 150;
