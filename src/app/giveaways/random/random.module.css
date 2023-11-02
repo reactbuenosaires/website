@@ -27,12 +27,21 @@
     font-weight: 700;
     background-color: transparent;
     text-align: center;
+
 }
 
 .input:focus {
     outline: none;
-    border-color: var(--white);
+    border-color: var(--white);  
+    appearance: none;
+    -webkit-appearance: none;
 }
+
+.input[type='number']::-webkit-inner-spin-button,
+.input[type='number']::-webkit-outer-spin-button{
+-webkit-appearance: none;
+}
+
 
 .random_winner {
     display: flex;

@@ -9,6 +9,8 @@ export default function Interactive() {
   const [winner, setWinner] = useState();
 
   const handleMaxInputNumber = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     setMaxInpuNumber(e.target.value);
   };
 
@@ -26,7 +28,8 @@ export default function Interactive() {
           type="number"
           className={styles.input}
           onChange={handleMaxInputNumber}
-        />
+          onWheel={(e) =>  e.stopPropagation()}
+          />
       </div>
       <button
         className={styles.random_button}
