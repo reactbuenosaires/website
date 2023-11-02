@@ -31,12 +31,13 @@ export default function Interactive() {
         />
       </div>
       <Button>
-        <div
-          disabled={!maxInputNumber || maxInputNumber <= 0 ? true : false}
-          onClick={generateRandom}
+        <span
+          onClick={
+            !maxInputNumber || maxInputNumber <= 0 ? null : generateRandom
+          }
         >
           Ganador/a
-        </div>
+        </span>
       </Button>
       {winner && maxInputNumber && (
         <>
