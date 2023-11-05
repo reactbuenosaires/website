@@ -9,11 +9,13 @@ export default function SocialMediaBanner() {
   return (
     <section className={style.social_media_container}>
       <div className={style.logo_image_container}>
+        <Link href={'/'}>
         <Image
           src={logo}
           height={65}
           alt="Logo de la comunidad React en Buenos Aires"
         />
+        </Link>
       </div>
       <Link href={"/giveaways"} className={style.giveaways_link}>
           Sorteos

@@ -30,15 +30,13 @@ export default function Interactive() {
           onWheel={(e) => e.stopPropagation()}
         />
       </div>
-      <Button>
-        <span
-          onClick={
-            !maxInputNumber || maxInputNumber <= 0 ? null : generateRandom
-          }
-        >
-          Ganador/a
-        </span>
-      </Button>
+      <button
+        className={styles.random_button}
+        disabled={!maxInputNumber || maxInputNumber <= 0 ? true : false}
+        onClick={!maxInputNumber || maxInputNumber <= 0 ? null : generateRandom}
+      >
+        Ganador/a
+      </button>
       {winner && maxInputNumber && (
         <>
           <div className={styles.random_winner}>{winner}</div>
