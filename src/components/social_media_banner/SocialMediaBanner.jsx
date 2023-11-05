@@ -15,6 +15,9 @@ export default function SocialMediaBanner() {
           alt="Logo de la comunidad React en Buenos Aires"
         />
       </div>
+      <Link href={"/giveaways"} className={style.giveaways_link}>
+          Sorteos
+        </Link>
       <div className={style.network_icons_container}>
         {socialMedia.map((network) => (
           <div className={style.icon_container} key={network.title}>
@@ -28,9 +31,6 @@ export default function SocialMediaBanner() {
           </div>
         ))}
       </div>
-        <Link href={"/giveaways"} className={style.giveaways_link}>
-          Sorteos
-        </Link>
     </section>
   );
 }
