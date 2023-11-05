@@ -1,9 +1,8 @@
 "use client";
-import styles from "./random.module.css";
+import styles from "./interactive.module.css";
 import { useState } from "react";
 import Title from "@/components/Title";
 import { getRandomNumber } from "@/utils/getRandomNumber";
-import Button from "@/components/Button";
 
 export default function Interactive() {
   const [maxInputNumber, setMaxInpuNumber] = useState();

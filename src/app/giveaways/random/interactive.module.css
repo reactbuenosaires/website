@@ -1,5 +1,5 @@
 .random_container {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,17 +16,6 @@
     color: var(--white);
     font-size: var(--title-font-size);
 }
-
-.random_button {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    padding: 10px;
-    border-radius: var(--border-radius);
-    color: var(--black);
-    background: var(--primary-color);
-  }
 
 .input {
     margin-left: 1rem;
@@ -79,13 +68,13 @@
 }
 
 .random_button {
-    margin-top: 1rem;
-    font-size: var(--text-font-size);
-    font-weight: 800;
-    padding: .5rem .8rem;
-    border: var(--border-white);
-    border-radius: var(--border-radius);
-    color: var(--deep-blue);
-    cursor: pointer;
+    display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 7px;
+  border-radius: var(--border-radius);
+  color: var(--black);
+  background: var(--primary-color);
 
 }
