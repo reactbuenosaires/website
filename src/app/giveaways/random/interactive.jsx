@@ -1,11 +1,11 @@
 "use client";
-import styles from "./random.module.css";
+import styles from "./interactive.module.css";
 import { useState } from "react";
 import Title from "@/components/Title";
 import { getRandomNumber } from "@/utils/getRandomNumber";
 
 export default function Interactive() {
-  const [maxInputNumber, setMaxInpuNumber] = useState(0);
+  const [maxInputNumber, setMaxInpuNumber] = useState();
   const [winner, setWinner] = useState();
 
   const handleMaxInputNumber = (e) => {
@@ -26,14 +26,15 @@ export default function Interactive() {
           type="number"
           className={styles.input}
           onChange={handleMaxInputNumber}
+          onWheel={(e) => e.stopPropagation()}
         />
       </div>
       <button
         className={styles.random_button}
         disabled={!maxInputNumber || maxInputNumber <= 0 ? true : false}
-        onClick={generateRandom}
+        onClick={!maxInputNumber || maxInputNumber <= 0 ? null : generateRandom}
       >
-        Generar Ganador/a
+        Ganador/a
       </button>
       {winner && maxInputNumber && (
         <>
