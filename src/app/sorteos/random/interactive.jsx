@@ -3,6 +3,7 @@ import styles from "./interactive.module.css";
 import { useState } from "react";
 import Title from "@/components/Title";
 import GoBack from "@/components/GoBack";
+import Loader from "@/components/loader/Loader";
 import getRandomNumber from "@/utils/getRandomNumber";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -19,23 +20,26 @@ const Info = ({ handleShowInfo }) => (
       <h4>¿Cómo lo hace?</h4>
       <ol>
         <li>
-          Captura de ruido atmosférico: Se utilizan radios que capturan ruido
-          estático, el cual es un fenómeno natural impredecible y aleatorio.
+          <strong>Captura de ruido atmosférico: </strong>
+          Se utilizan radios que capturan ruido estático, el cual es un fenómeno
+          natural impredecible y aleatorio.
         </li>
         <li>
-          Digitalización del ruido: El ruido capturado se convierte en una señal
-          digital. Procesamiento de la señal: Se procesan las señales digitales
-          para producir números aleatorios.
+          <strong>Digitalización del ruido: </strong>
+          El ruido capturado se convierte en una señal digital. Procesamiento de
+          la señal: Se procesan las señales digitales para producir números
+          aleatorios.
         </li>
         <li>
-          Distribución a través de API: Los números generados se ponen a
-          disposición a través de una API que permite a los desarrolladores
-          integrar esta funcionalidad en sus propias aplicaciones.
+          <strong>Distribución a través de API: </strong>
+          Los números generados se ponen a disposición a través de una API que
+          permite a los desarrolladores integrar esta funcionalidad en sus
+          propias aplicaciones.
         </li>
       </ol>
     </div>
     <div className={styles.close} onClick={handleShowInfo}>
-      <FontAwesomeIcon icon={faXmark} />
+      <FontAwesomeIcon icon={faXmark} width={20} height={20} />
     </div>
   </article>
 );
@@ -45,18 +49,29 @@ export default function Interactive() {
   const [showInput, setShowInput] = useState(true);
   const [maxNumber, setMaxNumber] = useState(null);
   const [randomNumber, setRandomNumber] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   function handleShowInfo() {
     setShowInfo(false);
   }
 
+  function clearMaxNumber() {
+    setShowInput(true);
+    setMaxNumber(null);
+    setRandomNumber(null);
+  }
+
   const handleFetchRandomNumber = async () => {
+    setLoading(true);
+    setRandomNumber(null);
     setShowInput(false);
     const number = await getRandomNumber(maxNumber);
     if (number !== null) {
       setRandomNumber(number);
+      setLoading(false);
     } else {
       console.error("Failed to fetch a random number");
+      setLoading(false);
     }
   };
 
@@ -66,12 +81,13 @@ export default function Interactive() {
       {showInfo && <Info handleShowInfo={handleShowInfo} />}
       <section
         className={styles.random_container}
-        style={{ marginTop: "13rem" }}
+        style={{ marginTop: "11rem" }}
       >
         <Title titleDescription="Generador de números aleatorios:" />
+
         {showInput && (
           <div className={styles.form}>
-            <label>Número máximo:</label>
+            <label>Número de participantes:</label>
             <input
               value={maxNumber}
               onChange={(e) => setMaxNumber(e.target.value)}
@@ -83,17 +99,27 @@ export default function Interactive() {
             </button>
           </div>
         )}
-        {randomNumber && (
-          <>
-            <div className={styles.winner}>{randomNumber}</div>
-            <button
-              className={styles.sortBtn}
-              onClick={handleFetchRandomNumber}
-            >
-              Obtener otro número aleatorio
-            </button>
-          </>
-        )}
+        <div style={{ position: "relative" }}>
+          {randomNumber && !showInput && (
+            <div className={styles.randomNumber_container}>
+              <div className={styles.winner}>{randomNumber}</div>
+              <button
+                className={styles.sortBtn}
+                onClick={handleFetchRandomNumber}
+              >
+                Obtener otro número aleatorio
+              </button>
+              <button className={styles.showInputBtn} onClick={clearMaxNumber}>
+                Cambiar cantidad de participantes
+              </button>
+            </div>
+          )}
+          {loading && (
+            <div className={styles.loading_container}>
+              <Loader />
+            </div>
+          )}
+        </div>
       </section>
     </div>
   );
