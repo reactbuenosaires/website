@@ -4,6 +4,7 @@
   height: 65px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   bottom: 0px;
   backdrop-filter: var(--blur-filter);
@@ -43,6 +44,22 @@
 .icon:hover {
   opacity: 0.9;
   scale: 1.1;
+}
+
+.giveaways_link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.giveaways_link:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {
