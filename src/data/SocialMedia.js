@@ -9,6 +9,12 @@ import {
 
 const socialMedia = [
   {
+    url: "https://linkedin.com/company/react-buenos-aires",
+    title: "LinkedIn",
+    username: "React Buenos Aires",
+    icon: faLinkedin,
+  },
+  {
     url: "https://www.meetup.com/es/react-en-buenos-aires/",
     title: "Meetup",
     username: "React en Buenos Aires",
@@ -31,12 +37,6 @@ const socialMedia = [
     title: "Instagram",
     username: "@react_ba",
     icon: faInstagram,
-  },
-  {
-    url: "https://linkedin.com/company/react-buenos-aires",
-    title: "LinkedIn",
-    username: "React Buenos Aires",
-    icon: faLinkedin,
   },
   {
     url: "https://github.com/reactbuenosaires",
