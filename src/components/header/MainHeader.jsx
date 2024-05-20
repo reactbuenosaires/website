@@ -16,9 +16,9 @@ const MainHeader = () => {
           />
         </Link>
       </div>
-      <Link href={"/giveaways"} className={style.giveaways_link}>
+      {/* <Link href={"/sorteos"} className={style.giveaways_link}>
         Sorteos
-      </Link>
+      </Link> */}
     </header>
   );
 };

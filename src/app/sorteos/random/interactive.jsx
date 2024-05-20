@@ -79,10 +79,7 @@ export default function Interactive() {
     <div className={styles.page_container}>
       <GoBack />
       {showInfo && <Info handleShowInfo={handleShowInfo} />}
-      <section
-        className={styles.random_container}
-        style={{ marginTop: "11rem" }}
-      >
+      <section className={styles.random_container}>
         <Title titleDescription="Generador de números aleatorios:" />
 
         {showInput && (
