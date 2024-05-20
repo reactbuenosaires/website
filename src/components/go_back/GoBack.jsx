@@ -12,7 +12,8 @@ const GoBack = () => {
   return (
     <div className={styles.container}>
       <button onClick={() => router.back()}>
-        <FontAwesomeIcon icon={faCircleLeft} /> <strong>Volver</strong>
+        <FontAwesomeIcon icon={faCircleLeft} width={15} height={15} />{" "}
+        <strong>Volver</strong>
       </button>
     </div>
   );
