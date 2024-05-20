@@ -30,9 +30,9 @@ export default function SocialMediaBanner() {
           </div>
         ))}
       </div>
-      <Link href={"/sorteos"} className={style.giveaways_link}>
+      {/* <Link href={"/sorteos"} className={style.giveaways_link}>
         ¡Haz un sorteo!
-      </Link>
+      </Link> */}
     </section>
   );
 }
