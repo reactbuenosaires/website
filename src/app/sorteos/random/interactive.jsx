@@ -2,7 +2,7 @@
 import styles from "./interactive.module.css";
 import { useState } from "react";
 import Title from "@/components/Title";
-import GoBack from "@/components/GoBack";
+import GoBack from "@/components/go_back/GoBack";
 import Loader from "@/components/loader/Loader";
 import getRandomNumber from "@/utils/getRandomNumber";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

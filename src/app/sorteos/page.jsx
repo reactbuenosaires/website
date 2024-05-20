@@ -3,7 +3,7 @@ import { faListOl } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./giveaways.module.css";
 import Title from "@/components/Title";
-import GoBack from "../../components/GoBack";
+import GoBack from "../../components/go_back/GoBack";
 import Link from "next/link";
 
 export default function Giveaways() {
@@ -14,7 +14,7 @@ export default function Giveaways() {
         <Title titleDescription="Elige una opción" />
         <Link href={"/sorteos/random"} className={styles.giveaways_link}>
           <div className={styles.random_bar}>
-            <FontAwesomeIcon icon={faListOl} />
+            <FontAwesomeIcon icon={faListOl} width={20} height={20} />
             <p>Utiliza números aleatorios</p>
           </div>
         </Link>
