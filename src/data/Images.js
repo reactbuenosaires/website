@@ -15,8 +15,8 @@ export const aboutUsImages = [
 ];
 
 export const statsImages = [
-  { description: "People in Meetup", src: people, text: "+7700 Miembros" },
-  { description: "Conference stage", src: stage, text: "+80 Eventos" },
-  { description: "Code Screen", src: code, text: "+7 años" },
+  { description: "People in Meetup", src: people, text: "+8000 Miembros" },
+  { description: "Conference stage", src: stage, text: "+90 Eventos" },
+  { description: "Code Screen", src: code, text: "+8 años" },
   { description: "Speaker", src: speaker, text: "Eventos mensuales" },
 ];
