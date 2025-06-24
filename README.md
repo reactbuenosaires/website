@@ -34,5 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # website
-"# website" 
+
+"# website"
+
+## Create PRDs
+
+_from https://github.com/snarktank/ai-dev-tasks_
+
+Example:
+
+```
+Use @create-prd.mdc
+Here's the feature I want to build: [Describe your feature in detail]
+Reference these files to help you: [Optional: @file1.py @file2.ts]
+```
