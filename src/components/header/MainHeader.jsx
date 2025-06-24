@@ -16,9 +16,9 @@ const MainHeader = () => {
           />
         </Link>
       </div>
-      {/* <Link href={"/sorteos"} className={style.giveaways_link}>
-        Sorteos
-      </Link> */}
+      <Link href={"/generar-random"} className={style.giveaways_link}>
+        Generar número aleatorio
+      </Link>
     </header>
   );
 };
